@@ -1,1 +1,1 @@
-Sitemap: https://jbryer.github.io/portfoliotalk/sitemap.xml
+Sitemap: https://cdbyl.github.io/portfolio/sitemap.xml

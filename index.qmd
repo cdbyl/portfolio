@@ -26,17 +26,17 @@ GIS Analyst and Environmental Engineer with 4+ years of experience delivering sp
 ## Education
 
 BS & MS in Environmental Engineering | Universidad Nacional de San Martín (UNSAM)
-
 Diploma in Applied Geomatics | Instituto de Altos Estudios Espaciales Mario Gulich (CONAE - UNC)
+
 ---
-//## Selected Projects
+/* ## Selected Projects */
 
 
-// [likert](https://github.com/jbryer/likert) - Analysis and Visualization of Likert Based Items
+/* [likert](https://github.com/jbryer/likert) - Analysis and Visualization of Likert Based Items */
 
-// [medley](https://github.com/jbryer/medley) - Predictive Modeling with Missing Data  
+/* [medley](https://github.com/jbryer/medley) - Predictive Modeling with Missing Data */
 
-// [clav](https://github.com/clav) - Cluster Analysis Validation
+/* [clav](https://github.com/clav) - Cluster Analysis Validation */
 
 
 :::

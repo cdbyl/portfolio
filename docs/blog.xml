@@ -5,16 +5,16 @@
       xmlns:dc="http://purl.org/dc/elements/1.1/" 
       version="2.0">
 <channel>
-<title>Jason Bryer, Ph.D.</title>
-<link>https://jbryer.github.io/portfoliotalk/blog.html</link>
-<atom:link href="https://jbryer.github.io/portfoliotalk/blog.xml" rel="self" type="application/rss+xml"/>
+<title>Carolina Byl</title>
+<link>https://cdbyl.github.io/portfolio/blog.html</link>
+<atom:link href="https://cdbyl.github.io/portfolio/blog.xml" rel="self" type="application/rss+xml"/>
 <description>Sample portfolio website</description>
 <generator>quarto-1.8.26</generator>
 <lastBuildDate>Wed, 19 Feb 2025 03:00:00 GMT</lastBuildDate>
 <item>
   <title>Building a portfolio with Github and Quarto</title>
   <dc:creator>Jason Bryer</dc:creator>
-  <link>https://jbryer.github.io/portfoliotalk/posts/2025-02-19-Github_Portfolio.html</link>
+  <link>https://cdbyl.github.io/portfolio/posts/2025-02-19-Github_Portfolio.html</link>
   <description><![CDATA[ 
 
 
@@ -35,9 +35,9 @@
  ]]></description>
   <category>Github</category>
   <category>Quarto</category>
-  <guid>https://jbryer.github.io/portfoliotalk/posts/2025-02-19-Github_Portfolio.html</guid>
+  <guid>https://cdbyl.github.io/portfolio/posts/2025-02-19-Github_Portfolio.html</guid>
   <pubDate>Wed, 19 Feb 2025 03:00:00 GMT</pubDate>
-  <media:content url="https://jbryer.github.io/portfoliotalk/posts/2025-02-19-Github_Portfolio.png" medium="image" type="image/png" height="96" width="144"/>
+  <media:content url="https://cdbyl.github.io/portfolio/posts/2025-02-19-Github_Portfolio.png" medium="image" type="image/png" height="96" width="144"/>
 </item>
 </channel>
 </rss>
