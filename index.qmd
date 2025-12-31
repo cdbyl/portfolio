@@ -21,26 +21,22 @@ comments: false
 ::: {.column-page}
 
 
-Dr. Jason Bryer is currently an Assistant Professor and Associate Director in the [Data Science and Information Systems](https://sps.cuny.edu/academics/graduate/master-science-data-science-ms) department at the [City University of New York](https://sps.cunuy.edu). He is currently the Principal Investigator of the FIPSE ($3 million #P116F150077) and IES funded ($3.8 million R305A210269) [Diagnostic Assessment and Achievement of College Skills (DAACS)](https://daacs.net), which is a suite of technological and social supports designed to optimize student learning. Dr. Bryer’s other research interests include quasi-experimental designs with an emphasis on propensity score analysis, data systems to support formative assessment, and the use of open source software for conducting reproducible research. He is the author of over a dozen [R packages](https://github.com/jbryer?tab=repositories), including three related to conducting [propensity score analyses](https://psa.bryer.org). When not crunching numbers, Jason is a [wedding photographer](https://bryerphotography.com) and proud dad to three boys.
-
+GIS Analyst and Environmental Engineer with 4+ years of experience delivering spatial analysis, cartographic products, and cloud-based geospatial solutions for environmental and infrastructure projects. Proven background in enterprise geodatabases, remote sensing analysis using Google Earth Engine, and field data collection workflows. Programming experience in Python, SQL, and JavaScript, applied to support multidisciplinary teams in national and international contexts, including technical instruction and mentoring.
 
 ## Education
 
+BS & MS in Environmental Engineering | Universidad Nacional de San Martín (UNSAM)
 
-Ph.D. in Educational Psychology & Methodology, 2014, University at Albany
-
-M.S. in Educational Psychology & Methodology, 2009, University at Albany
-
-B.S. in Mathematics, 1999, The College of Saint Rose
-
-## Selected Projects
+Diploma in Applied Geomatics | Instituto de Altos Estudios Espaciales Mario Gulich (CONAE - UNC)
+---
+//## Selected Projects
 
 
-[likert](https://github.com/jbryer/likert) - Analysis and Visualization of Likert Based Items
+// [likert](https://github.com/jbryer/likert) - Analysis and Visualization of Likert Based Items
 
-[medley](https://github.com/jbryer/medley) - Predictive Modeling with Missing Data  
+// [medley](https://github.com/jbryer/medley) - Predictive Modeling with Missing Data  
 
-[clav](https://github.com/clav) - Cluster Analysis Validation
+// [clav](https://github.com/clav) - Cluster Analysis Validation
 
 
 :::

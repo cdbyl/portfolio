@@ -9,7 +9,7 @@ project:
 
 website:
   title: "Carolina Byl"
-  site-url: https://jbryer.github.io/portfoliotalk
+  site-url: https://cdbyl.github.io/portfolio
   description: "Sample portfolio website"
   open-graph:
     locale: en_US
