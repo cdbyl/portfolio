@@ -1,0 +1,85 @@
+---
+format: pdf
+editor_options:
+  chunk_output_type: console
+editor:
+  markdown:
+    wrap: 72
+params:
+  course_number: ""
+  course_name: ""
+  semester: ""
+  credits: "3"
+  instructor: ""
+  prerequisites: ""
+  email: ""
+  github: ""
+  office_hours: ""
+---
+
+```{r, echo=FALSE, fig.align='center', out.width='80%'}
+knitr::include_graphics('../images/sps_logo.jpg')
+source('../common/functions.R')
+```
+
+**COURSE NAME AND NUMBER:** `r paste0(params$course_number, ' ', params$course_name)`
+**SEMSTER:** `r params$semester`
+**CREDITS:** `r params$credits`
+**PREREQUISITE(S):** `r params$prerequisites`
+
+**INSTRUCTOR:** `r params$instructor`
+**EMAIL:** `r params$email`
+**GITHUB:** `r params$github`
+**OFFICE HOURS:** `r params$office_hours`
+
+
+### COURSE DESCRIPTION:
+
+
+### PROGRAM LEARNING OUTCOMES ADDRESSED BY THIS COURSE:
+
+```{r, echo=FALSE, results='asis', message=FALSE, warning=FALSE}
+cat(program_learning_outcomes(params$course_number))
+```
+
+
+### COURSE LEARNING OUTCOMES:
+
+
+### HOW IS THIS COURSE RELEVANT FOR IS PROFESSIONALS?
+
+
+### REQUIRED TEXTBOOKS:
+
+
+### ADDITIONAL RESOURCES:
+
+
+### ASSIGNMENTS AND GRADING:
+
+
+### LEARNING ASSESSMENTS:
+
+
+{{< include ../common/grading_scale_undergrad.qmd >}}
+
+
+### COURSE OUTLINE AND SCHEDULE
+
+*Subject to change*
+
+```{r, echo=FALSE, results='asis'}
+options(knitr.kable.NA = '')
+schedule <- readxl::read_excel('schedule.xlsx')
+knitr::kable(schedule, row.names = FALSE, )
+```
+
+
+{{< include ../common/accessibility.qmd >}}
+
+{{< include ../common/online_ediquette.qmd >}}
+
+{{< include ../common/academic_integrity.qmd >}}
+
+{{< include ../common/support_services.qmd >}}
+

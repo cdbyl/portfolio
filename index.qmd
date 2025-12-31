@@ -1,8 +1,8 @@
 ---
 title: "Carolina Byl"
 about: # More info about this page type: https://quarto.org/docs/websites/website-about.html
-  template: trestles # Options include: jolla, trestles, solana, marquee, broadside
-  image: Headshot_Cartoon.jpg
+  template: jolla # Options include: jolla, trestles, solana, marquee, broadside
+  image: profile_pic.jpg
   links:
     - text: LinkedIn
       icon: linkedin
