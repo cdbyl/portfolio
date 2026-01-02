@@ -2,20 +2,26 @@
 title: "Projects"
 format: 
   html:
-    toc: true           # This enables the "On this page" sidebar
-    toc-title: "Index"  # Renames "On this page" to "Index"
-    toc-depth: 2        # Tells it to look at your ## Headings
+    toc: true
+    toc-title: "Index"
 page-layout: full
 ---
 
-Here is a collection of my recent work. Scroll down to view them all.
+Here is a collection of my recent work. Use the tabs below to filter by category.
 
----
+::: {.panel-tabset}
 
+## All Projects
 {{< include projects/analysis-01.qmd >}}
-
----
-
+<hr>
 {{< include projects/analysis-02.qmd >}}
 
----
+## GIS
+{{< include projects/analysis-01.qmd >}}
+<hr>
+{{< include projects/analysis-02.qmd >}}
+
+## 30dmc
+{{< include projects/analysis-02.qmd >}}
+
+:::
