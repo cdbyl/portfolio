@@ -1,0 +1,58 @@
+/*-- scss:defaults --*/
+
+// 3. Keep the Lux Base
+$theme: "lux";
+
+// 1. Highlight Colors (The "Brand" colors)
+$success: #40A355;       // The main color (buttons, active links)
+$info: #9E54BD;     // The secondary color
+$warning: #F0AD4E;
+$danger: #D9534F;
+$link-color: $success;   // Make links match your primary color
+
+// 2. Font Sizes
+$font-size-base: 1rem;  // Changes all normal text (standard is 1rem)
+$h1-font-size: 1.5rem;    // Big Heading 1
+$h2-font-size: 1.25rem;    // Medium Heading 2
+$h3-font-size: 1.15rem;    // Small Heading 3
+
+/*-- scss:rules --*/
+
+// 1. Shrink the main Navbar container
+.navbar {
+  padding-top: 0.75rem !important;    // Default is usually ~0.5rem or higher
+  padding-bottom: 0.75rem !important;
+  min-height: 40px;                  // Ensures it doesn't get TOO small
+}
+
+// 2. Shrink the space around the Links
+.navbar-nav .nav-link {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+// 3. Shrink the Brand/Logo area to match
+.navbar-brand {
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-right: 2rem;                // Space between title and first link
+  font-size: 1.15rem !important; 
+  font-weight: 700;
+  color: $info !important;
+}
+
+
+// If you want a specific "text highlight" color (the background when you 
+// drag your mouse over text to select it):
+::selection {
+  background: rgba($primary, 0.3); 
+  color: black;
+}
+
+// Add a little extra space under headings
+h1, h2, h3 {
+  margin-bottom: 1.5rem;
+}

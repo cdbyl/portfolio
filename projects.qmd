@@ -1,15 +1,21 @@
 ---
-title: "Blog"
-listing:
-  contents: projects
-  sort: "title"
-  type: grid # Options include default, grid, table
-  categories: true
-  sort-ui: true
-  filter-ui: true
+title: "Projects"
+format: 
+  html:
+    toc: true           # This enables the "On this page" sidebar
+    toc-title: "Index"  # Renames "On this page" to "Index"
+    toc-depth: 2        # Tells it to look at your ## Headings
 page-layout: full
-title-block-banner: false
 ---
-::: {.column-page}
 
-:::
+Here is a collection of my recent work. Scroll down to view them all.
+
+---
+
+{{< include projects/analysis-01.qmd >}}
+
+---
+
+{{< include projects/analysis-02.qmd >}}
+
+---

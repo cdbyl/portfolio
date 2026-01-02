@@ -8,9 +8,16 @@ project:
     - "cp -rnv slides/. docs/slides/"
 
 website:
-  title: "Carolina Byl"
+  # announcement: 
+  #   icon: info-circle
+  #   dismissable: true
+  #   content: "**Alert** - this is some information that you should pay attention to"
+  #   type: primary
+  #   position: below-navbar
+  title: "GIS Portfolio"
   site-url: https://cdbyl.github.io/portfolio
-  description: "Sample portfolio website"
+  description: "Carolina Byl's Portfolio"
+  favicon: loguito.png
   open-graph:
     locale: en_US
   twitter-card:
@@ -26,13 +33,14 @@ website:
       #- icon: rss
       #  href: blog.xml
   page-footer:
-    left: "Site created with Quarto by Jason Bryer."
+    left: "Site created with Quarto"
 
 format:
   html:
-    theme: yeti # See for available themes: https://bootswatch.com
-    css: styles.css
+    respect-user-color-scheme: true
+    theme:
+      light: [lux, light.scss]
+      dark: [lux, dark.scss]
     toc: true
-
 
 

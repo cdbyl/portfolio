@@ -2,9 +2,9 @@
   {
     "objectID": "projects/daacs.html",
     "href": "projects/daacs.html",
-    "title": "DAACS",
+    "title": "Trees in Buenos Aires City",
     "section": "",
-    "text": "The Diagnostic Assessment and Achievement of College Skills (DAACS) is a suite of technological and social supports to optimize student learning. DAACS provides personalized feedback about students’ strengths and weaknesses in terms of key academic and self-regulated learning skills, linking them to the resources to help them be successful students.\nDAACS Websites:\n\ndaacs.net - General information about the project.\nmy.daacs.net - Public version of DAACS. Create an account, take the assessments, and view the feedback.\nsrl.daacs.net - Self-Regulated Learning open education reseource.\ndocs.daacs.net - This site is fir administrators, instructors, or anyone who is intereted in using DAACS with their students. Site contains training materials and technical information.\ngithub.com/daacs - Github organization where source code is hosted."
+    "text": "Platanos y alergia.\nSources:\n\ndaacs.net - General information about the project.\nmy.daacs.net - Public version of DAACS. Create an account, take the assessments, and view the feedback.\nsrl.daacs.net - Self-Regulated Learning open education reseource.\ndocs.daacs.net - This site is fir administrators, instructors, or anyone who is intereted in using DAACS with their students. Site contains training materials and technical information.\ngithub.com/daacs - Github organization where source code is hosted."
   },
   {
     "objectID": "posts/2025-02-19-Github_Portfolio.html",
@@ -32,27 +32,83 @@
     "href": "index.html",
     "title": "Carolina Byl",
     "section": "",
-    "text": "GIS Analyst and Environmental Engineer with 4+ years of experience delivering spatial analysis, cartographic products, and cloud-based geospatial solutions for environmental and infrastructure projects. Proven background in enterprise geodatabases, remote sensing analysis using Google Earth Engine, and field data collection workflows. Programming experience in Python, SQL, and JavaScript, applied to support multidisciplinary teams in national and international contexts, including technical instruction and mentoring.\n\n\nBS & MS in Environmental Engineering | Universidad Nacional de San Martín (UNSAM)\n\n\n\n//## Selected Projects\n// likert - Analysis and Visualization of Likert Based Items\n// medley - Predictive Modeling with Missing Data\n// clav - Cluster Analysis Validation"
+    "text": "GIS Analyst and Environmental Engineer with 4+ years of experience delivering spatial analysis, cartographic products, and cloud-based geospatial solutions for environmental and infrastructure projects. Proven background in enterprise geodatabases, remote sensing analysis using Google Earth Engine, and field data collection workflows. Programming experience in Python, SQL, and JavaScript, applied to support multidisciplinary teams in national and international contexts, including technical instruction and mentoring.\n\n\n\nBS & MS in Environmental Engineering @ Universidad Nacional de San Martín (UNSAM)\nDiploma in Applied Geomatics @ Instituto de Altos Estudios Espaciales Mario Gulich (CONAE - UNC)"
   },
   {
     "objectID": "index.html#education",
     "href": "index.html#education",
     "title": "Carolina Byl",
     "section": "",
-    "text": "BS & MS in Environmental Engineering | Universidad Nacional de San Martín (UNSAM)"
-  },
-  {
-    "objectID": "index.html#diploma-in-applied-geomatics-instituto-de-altos-estudios-espaciales-mario-gulich-conae---unc",
-    "href": "index.html#diploma-in-applied-geomatics-instituto-de-altos-estudios-espaciales-mario-gulich-conae---unc",
-    "title": "Carolina Byl",
-    "section": "",
-    "text": "//## Selected Projects\n// likert - Analysis and Visualization of Likert Based Items\n// medley - Predictive Modeling with Missing Data\n// clav - Cluster Analysis Validation"
+    "text": "BS & MS in Environmental Engineering @ Universidad Nacional de San Martín (UNSAM)\nDiploma in Applied Geomatics @ Instituto de Altos Estudios Espaciales Mario Gulich (CONAE - UNC)"
   },
   {
     "objectID": "projects.html",
     "href": "projects.html",
-    "title": "Blog",
+    "title": "Projects",
     "section": "",
-    "text": "Order By\n      Default\n      \n        Title\n      \n      \n        Author\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nDAACS\n\n\n\nResearch\n\n\n\nDiagnostic Assessment and Achievement of College Skills\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Here is a collection of my recent work. Scroll down to view them all."
+  },
+  {
+    "objectID": "index.html#selected-projects",
+    "href": "index.html#selected-projects",
+    "title": "Carolina Byl",
+    "section": "",
+    "text": "likert - Analysis and Visualization of Likert Based Items\nmedley - Predictive Modeling with Missing Data\nclav - Cluster Analysis Validation"
+  },
+  {
+    "objectID": "index.html#about-me",
+    "href": "index.html#about-me",
+    "title": "Carolina Byl",
+    "section": "",
+    "text": "GIS Analyst and Environmental Engineer with 4+ years of experience delivering spatial analysis, cartographic products, and cloud-based geospatial solutions for environmental and infrastructure projects. Proven background in enterprise geodatabases, remote sensing analysis using Google Earth Engine, and field data collection workflows. Programming experience in Python, SQL, and JavaScript, applied to support multidisciplinary teams in national and international contexts, including technical instruction and mentoring."
+  },
+  {
+    "objectID": "projects.html#welcome-to-my-portfolio",
+    "href": "projects.html#welcome-to-my-portfolio",
+    "title": "Projects",
+    "section": "",
+    "text": "Here you can find my latest work in spatial analysis and cartography."
+  },
+  {
+    "objectID": "projects.html#urban-heat-islands-in-buenos-aires",
+    "href": "projects.html#urban-heat-islands-in-buenos-aires",
+    "title": "Projects",
+    "section": "Urban Heat Islands in Buenos Aires",
+    "text": "Urban Heat Islands in Buenos Aires\nAnalysis by Carolina Byl | Dec 2025\n[Your text and maps go here…]"
+  },
+  {
+    "objectID": "projects.html#dmc-day2",
+    "href": "projects.html#dmc-day2",
+    "title": "Projects",
+    "section": "30dmc day2",
+    "text": "30dmc day2\nAnalysis by Carolina Byl | Nov 2025\n[Your text and maps go here…]"
+  },
+  {
+    "objectID": "projects/analysis-01.html",
+    "href": "projects/analysis-01.html",
+    "title": "GIS Portfolio",
+    "section": "",
+    "text": "Analysis by Carolina Byl | Dec 2025\n[Your text and maps go here…]"
+  },
+  {
+    "objectID": "projects/analysis-01.html#urban-heat-islands-in-buenos-aires",
+    "href": "projects/analysis-01.html#urban-heat-islands-in-buenos-aires",
+    "title": "GIS Portfolio",
+    "section": "",
+    "text": "Analysis by Carolina Byl | Dec 2025\n[Your text and maps go here…]"
+  },
+  {
+    "objectID": "projects/analysis-02.html",
+    "href": "projects/analysis-02.html",
+    "title": "GIS Portfolio",
+    "section": "",
+    "text": "Analysis by Carolina Byl | Nov 2025\n[Your text and maps go here…]"
+  },
+  {
+    "objectID": "projects/analysis-02.html#dmc-day2",
+    "href": "projects/analysis-02.html#dmc-day2",
+    "title": "GIS Portfolio",
+    "section": "",
+    "text": "Analysis by Carolina Byl | Nov 2025\n[Your text and maps go here…]"
   }
 ]

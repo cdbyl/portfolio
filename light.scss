@@ -1,0 +1,31 @@
+/*-- scss:defaults --*/
+$theme: "lux";
+
+// --- LIGHT COLORS ---
+$success: #40A355;
+$info: #9E54BD; // Purple
+$link-color: $success;
+
+// --- SIZES ---
+$font-size-base: 1rem;
+$h1-font-size: 1.5rem;
+$h2-font-size: 1.25rem;
+
+/*-- scss:rules --*/
+// --- NAVBAR RULES ---
+.navbar {
+  padding-top: 0.75rem !important;
+  padding-bottom: 0.75rem !important;
+  min-height: 40px;
+}
+.navbar-brand {
+  font-size: 1.15rem !important; 
+  font-weight: 700;
+  color: $info !important; // Purple Title
+  margin-right: 2rem;
+}
+.navbar-nav .nav-link {
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
