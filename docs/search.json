@@ -1,5 +1,12 @@
 [
   {
+    "objectID": "projects/analysis-04.html",
+    "href": "projects/analysis-04.html",
+    "title": "GIS Portfolio",
+    "section": "",
+    "text": "30dmc day7\nAnalysis by Carolina Byl | Nov 2025\n[Your text and maps go here…]"
+  },
+  {
     "objectID": "projects/analysis-02.html",
     "href": "projects/analysis-02.html",
     "title": "GIS Portfolio",
@@ -9,9 +16,16 @@
   {
     "objectID": "projects.html",
     "href": "projects.html",
-    "title": "Projects",
+    "title": "GIS Portfolio",
     "section": "",
-    "text": "Here is a collection of my recent work. Use the tabs below to filter by category.\n\nAll ProjectsGIS30dmc\n\n\n\nUrban Heat Islands in Buenos Aires\nAnalysis by Carolina Byl | Dec 2025\n[Your text and maps go here…]\n\n\n\n30dmc day2\nAnalysis by Carolina Byl | Nov 2025\n[Your text and maps go here…]\n\n\n\n\nUrban Heat Islands in Buenos Aires\nAnalysis by Carolina Byl | Dec 2025\n[Your text and maps go here…]\n\n\n\n30dmc day2\nAnalysis by Carolina Byl | Nov 2025\n[Your text and maps go here…]\n\n\n\n\n30dmc day2\nAnalysis by Carolina Byl | Nov 2025\n[Your text and maps go here…]\n:::"
+    "text": "Select a category from the right to filter the projects."
+  },
+  {
+    "objectID": "projects.html#featured-work",
+    "href": "projects.html#featured-work",
+    "title": "GIS Portfolio",
+    "section": "",
+    "text": "Select a category from the right to filter the projects."
   },
   {
     "objectID": "categories/r/index.html",
@@ -44,8 +58,15 @@
   {
     "objectID": "projects/analysis-01.html",
     "href": "projects/analysis-01.html",
+    "title": "Life Quality Index for Reconquista Basin",
+    "section": "",
+    "text": "(Your text, maps, and code go here…)\n[Your text and maps go here…]"
+  },
+  {
+    "objectID": "projects/analysis-03.html",
+    "href": "projects/analysis-03.html",
     "title": "GIS Portfolio",
     "section": "",
-    "text": "Urban Heat Islands in Buenos Aires\nAnalysis by Carolina Byl | Dec 2025\n[Your text and maps go here…]"
+    "text": "30dmc day3\nAnalysis by Carolina Byl | Nov 2025\n[Your text and maps go here…]"
   }
 ]

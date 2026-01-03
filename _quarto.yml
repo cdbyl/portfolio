@@ -38,6 +38,7 @@ format:
     theme:
       light: [lux, light.scss]
       dark: [lux, dark.scss]
+    css: styles.css
     toc: true
 
 

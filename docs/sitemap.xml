@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://cdbyl.github.io/portfolio/projects/analysis-04.html</loc>
+    <lastmod>2026-01-02T23:02:35.182Z</lastmod>
+  </url>
+  <url>
     <loc>https://cdbyl.github.io/portfolio/projects/analysis-02.html</loc>
     <lastmod>2026-01-02T19:27:42.569Z</lastmod>
   </url>
   <url>
     <loc>https://cdbyl.github.io/portfolio/projects.html</loc>
-    <lastmod>2026-01-02T19:29:04.209Z</lastmod>
+    <lastmod>2026-01-03T00:06:12.315Z</lastmod>
   </url>
   <url>
     <loc>https://cdbyl.github.io/portfolio/categories/r/index.html</loc>
@@ -14,10 +18,14 @@
   </url>
   <url>
     <loc>https://cdbyl.github.io/portfolio/index.html</loc>
-    <lastmod>2026-01-02T16:43:01.604Z</lastmod>
+    <lastmod>2026-01-03T00:21:10.017Z</lastmod>
   </url>
   <url>
     <loc>https://cdbyl.github.io/portfolio/projects/analysis-01.html</loc>
-    <lastmod>2026-01-02T19:27:42.501Z</lastmod>
+    <lastmod>2026-01-02T23:25:57.564Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cdbyl.github.io/portfolio/projects/analysis-03.html</loc>
+    <lastmod>2026-01-02T23:02:24.948Z</lastmod>
   </url>
 </urlset>

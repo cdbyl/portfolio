@@ -5,6 +5,7 @@ $theme: "lux";
 $body-bg: #1a1a1a;       // FORCE Dark Background
 $body-color: #f8f9fa;    // Light Text
 $primary: #f8f9fa;       // Light Titles
+$secondary: #f8f9fa;       // Light Titles
 $navbar-bg: #111111;     // Dark Navbar
 $navbar-fg: #f8f9fa;     // Light Navbar Text
 
@@ -37,6 +38,19 @@ $h2-font-size: 1.25rem;
   text-transform: uppercase;
   color: #f8f9fa !important; // Force links to be white in dark mode
 }
+/* Fix visibility of Categories in Dark Mode */
+.quarto-listing-category-title {
+    color: #e0e0e0 !important; /* Light grey/white for the title */
+    font-weight: bold;
+}
 
+.quarto-listing-category .quarto-category {
+    color: #cccccc !important; /* Slightly softer grey for the links */
+}
+
+.quarto-listing-category .quarto-category:hover {
+    color: #ffffff !important; /* Bright white when hovering */
+}
 // Fix headings just in case
 h1, h2, h3 { color: #f8f9fa !important; }
+

@@ -1,4 +1,14 @@
-### Urban Heat Islands in Buenos Aires
-*Analysis by Carolina Byl | Dec 2025*
+---
+title: "Life Quality Index for Reconquista Basin"
+description: "descripcionsarasa"
+date: "2019-01-02"
+categories: [QGIS, Cartography, SOTM Latam]
+image: "images/img1.jpeg"  # Crucial for the Grid look!
+format:
+  html:
+    code-fold: true # Nice touch: hides code until user clicks "Show Code"
+---
+
+(Your text, maps, and code go here...)
 
 [Your text and maps go here...]

@@ -1,5 +1,14 @@
 [
   {
+    "listing": "/projects.html",
+    "items": [
+      "/projects/analysis-02.html",
+      "/projects/analysis-03.html",
+      "/projects/analysis-04.html",
+      "/projects/analysis-01.html"
+    ]
+  },
+  {
     "listing": "/categories/r/index.html",
     "items": []
   }
