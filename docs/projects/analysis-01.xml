@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>GIS Portfolio</title>
+<link>https://cdbyl.github.io/portfolio/projects/analysis-01.html</link>
+<atom:link href="https://cdbyl.github.io/portfolio/projects/analysis-01.xml" rel="self" type="application/rss+xml"/>
+<description>descripcionsarasa</description>
+<language>en-us</language>
+<image>
+<url>https://cdbyl.github.io/portfolio/images/img1.jpeg</url>
+<title>GIS Portfolio</title>
+<link>https://cdbyl.github.io/portfolio/projects/analysis-01.html</link>
+</image>
+<generator>quarto-1.8.26</generator>
+<lastBuildDate>Sun, 04 Jan 2026 22:33:13 GMT</lastBuildDate>
+<item>
+  <title></title>
+  <link>https://cdbyl.github.io/portfolio/projects/analysis-02.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="dmc-day2" class="level3">
+<h3 class="anchored" data-anchor-id="dmc-day2">30dmc day2</h3>
+<p><em>Analysis by Carolina Byl | Nov 2025</em></p>
+<p>[Your text and maps go here…]</p>
+
+
+</section>
+
+ ]]></description>
+  <guid>https://cdbyl.github.io/portfolio/projects/analysis-02.html</guid>
+  <pubDate>Sun, 04 Jan 2026 22:33:13 GMT</pubDate>
+</item>
+<item>
+  <title></title>
+  <link>https://cdbyl.github.io/portfolio/projects/analysis-03.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="dmc-day3" class="level3">
+<h3 class="anchored" data-anchor-id="dmc-day3">30dmc day3</h3>
+<p><em>Analysis by Carolina Byl | Nov 2025</em></p>
+<p>[Your text and maps go here…]</p>
+
+
+</section>
+
+ ]]></description>
+  <guid>https://cdbyl.github.io/portfolio/projects/analysis-03.html</guid>
+  <pubDate>Sun, 04 Jan 2026 22:33:13 GMT</pubDate>
+</item>
+<item>
+  <title></title>
+  <link>https://cdbyl.github.io/portfolio/projects/analysis-04.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="dmc-day7" class="level3">
+<h3 class="anchored" data-anchor-id="dmc-day7">30dmc day7</h3>
+<p><em>Analysis by Carolina Byl | Nov 2025</em></p>
+<p>[Your text and maps go here…]</p>
+
+
+</section>
+
+ ]]></description>
+  <guid>https://cdbyl.github.io/portfolio/projects/analysis-04.html</guid>
+  <pubDate>Sun, 04 Jan 2026 22:33:13 GMT</pubDate>
+</item>
+</channel>
+</rss>

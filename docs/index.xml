@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>GIS Portfolio</title>
+<link>https://cdbyl.github.io/portfolio/</link>
+<atom:link href="https://cdbyl.github.io/portfolio/index.xml" rel="self" type="application/rss+xml"/>
+<description>Carolina Byl&#39;s Portfolio</description>
+<language>en-us</language>
+<generator>quarto-1.8.26</generator>
+<lastBuildDate>Wed, 02 Jan 2019 03:00:00 GMT</lastBuildDate>
+<item>
+  <title>Quality of Life Index for Reconquista Basin</title>
+  <link>https://cdbyl.github.io/portfolio/projects/analysis-01.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>(Your text, maps, and code go here…)</p>
+<p>[Your text and maps go here…]</p>
+
+
+
+
+<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-listing-file-modified-sort="1767382062569" data-listing-reading-time-sort="1" data-listing-word-count-sort="12">
+<div class="thumbnail"><a href="../projects/analysis-02.html" class="no-external">
+
+<div class="listing-item-img-placeholder card-img-top">&nbsp;</div>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../projects/analysis-02.html" class="no-external">30dmc day2</a>
+</h3>
+<div class="delink listing-description"><a href="../projects/analysis-02.html" class="no-external">
+<em>Analysis by Carolina Byl | Nov 2025</em>
+</a></div>
+</div>
+<div class="metadata">
+<a href="../projects/analysis-02.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-listing-file-modified-sort="1767394944948" data-listing-reading-time-sort="1" data-listing-word-count-sort="12">
+<div class="thumbnail"><a href="../projects/analysis-03.html" class="no-external">
+
+<div class="listing-item-img-placeholder card-img-top">&nbsp;</div>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../projects/analysis-03.html" class="no-external">30dmc day3</a>
+</h3>
+<div class="delink listing-description"><a href="../projects/analysis-03.html" class="no-external">
+<em>Analysis by Carolina Byl | Nov 2025</em>
+</a></div>
+</div>
+<div class="metadata">
+<a href="../projects/analysis-03.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="2" data-listing-file-modified-sort="1767394955182" data-listing-reading-time-sort="1" data-listing-word-count-sort="12">
+<div class="thumbnail"><a href="../projects/analysis-04.html" class="no-external">
+
+<div class="listing-item-img-placeholder card-img-top">&nbsp;</div>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../projects/analysis-04.html" class="no-external">30dmc day7</a>
+</h3>
+<div class="delink listing-description"><a href="../projects/analysis-04.html" class="no-external">
+<em>Analysis by Carolina Byl | Nov 2025</em>
+</a></div>
+</div>
+<div class="metadata">
+<a href="../projects/analysis-04.html" class="no-external">
+</a>
+</div>
+</div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div> ]]></description>
+  <category>QGIS</category>
+  <category>Cartography</category>
+  <category>SOTM Latam</category>
+  <guid>https://cdbyl.github.io/portfolio/projects/analysis-01.html</guid>
+  <pubDate>Wed, 02 Jan 2019 03:00:00 GMT</pubDate>
+  <media:content url="https://cdbyl.github.io/portfolio/projects/images/img1.jpeg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title></title>
+  <link>https://cdbyl.github.io/portfolio/projects/analysis-02.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="dmc-day2" class="level3">
+<h3 class="anchored" data-anchor-id="dmc-day2">30dmc day2</h3>
+<p><em>Analysis by Carolina Byl | Nov 2025</em></p>
+<p>[Your text and maps go here…]</p>
+
+
+</section>
+
+ ]]></description>
+  <guid>https://cdbyl.github.io/portfolio/projects/analysis-02.html</guid>
+  <pubDate>Sun, 04 Jan 2026 22:33:19 GMT</pubDate>
+</item>
+<item>
+  <title></title>
+  <link>https://cdbyl.github.io/portfolio/projects/analysis-03.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="dmc-day3" class="level3">
+<h3 class="anchored" data-anchor-id="dmc-day3">30dmc day3</h3>
+<p><em>Analysis by Carolina Byl | Nov 2025</em></p>
+<p>[Your text and maps go here…]</p>
+
+
+</section>
+
+ ]]></description>
+  <guid>https://cdbyl.github.io/portfolio/projects/analysis-03.html</guid>
+  <pubDate>Sun, 04 Jan 2026 22:33:19 GMT</pubDate>
+</item>
+<item>
+  <title></title>
+  <link>https://cdbyl.github.io/portfolio/projects/analysis-04.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="dmc-day7" class="level3">
+<h3 class="anchored" data-anchor-id="dmc-day7">30dmc day7</h3>
+<p><em>Analysis by Carolina Byl | Nov 2025</em></p>
+<p>[Your text and maps go here…]</p>
+
+
+</section>
+
+ ]]></description>
+  <guid>https://cdbyl.github.io/portfolio/projects/analysis-04.html</guid>
+  <pubDate>Sun, 04 Jan 2026 22:33:19 GMT</pubDate>
+</item>
+<item>
+  <title></title>
+  <link>https://cdbyl.github.io/portfolio/projects.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="featured-work" class="level2">
+<h2 class="anchored" data-anchor-id="featured-work">Featured Work</h2>
+<p>Select a category from the right to filter the projects.</p>
+
+
+
+</section>
+
+<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1767382062569" data-listing-reading-time-sort="1" data-listing-word-count-sort="12">
+<a href="./projects/analysis-02.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="listing-item-img-placeholder card-img-top" style="height: 200px;">&nbsp;</div>
+<div class="card-body post-contents">
+<div class="card-text listing-description delink">
+<em>Analysis by Carolina Byl | Nov 2025</em>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="1" data-listing-file-modified-sort="1767394944948" data-listing-reading-time-sort="1" data-listing-word-count-sort="12">
+<a href="./projects/analysis-03.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="listing-item-img-placeholder card-img-top" style="height: 200px;">&nbsp;</div>
+<div class="card-body post-contents">
+<div class="card-text listing-description delink">
+<em>Analysis by Carolina Byl | Nov 2025</em>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="2" data-listing-file-modified-sort="1767394955182" data-listing-reading-time-sort="1" data-listing-word-count-sort="12">
+<a href="./projects/analysis-04.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="listing-item-img-placeholder card-img-top" style="height: 200px;">&nbsp;</div>
+<div class="card-body post-contents">
+<div class="card-text listing-description delink">
+<em>Analysis by Carolina Byl | Nov 2025</em>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="3" data-categories="UUdJUyUyQ0NhcnRvZ3JhcGh5JTJDU09UTSUyMExhdGFt" data-listing-date-sort="1546398000000" data-listing-file-modified-sort="1767565682752" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="12">
+<a href="./projects/analysis-01.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://cdbyl.github.io/portfolio/projects/images/img1.jpeg" class="thumbnail-image card-img" style="height: 200px;">
+</p>
+<div class="card-body post-contents">
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('UUdJUw=='); return false;">QGIS</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('Q2FydG9ncmFwaHk='); return false;">Cartography</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('U09UTSUyMExhdGFt'); return false;">SOTM Latam</div>
+
+</div>
+<div class="card-text listing-description delink">
+<p>descripcionsarasa</p>
+</div>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+Jan 2, 2019
+</div>
+</div>
+</div>
+</div></a>
+</div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div> ]]></description>
+  <guid>https://cdbyl.github.io/portfolio/projects.html</guid>
+  <pubDate>Sun, 04 Jan 2026 22:33:19 GMT</pubDate>
+</item>
+</channel>
+</rss>

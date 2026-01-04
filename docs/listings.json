@@ -7,5 +7,23 @@
       "/projects/analysis-04.html",
       "/projects/analysis-01.html"
     ]
+  },
+  {
+    "listing": "/projects/analysis-01.html",
+    "items": [
+      "/projects/analysis-02.html",
+      "/projects/analysis-03.html",
+      "/projects/analysis-04.html"
+    ]
+  },
+  {
+    "listing": "/index.html",
+    "items": [
+      "/projects/analysis-02.html",
+      "/projects/analysis-03.html",
+      "/projects/analysis-04.html",
+      "/projects.html",
+      "/projects/analysis-01.html"
+    ]
   }
 ]
