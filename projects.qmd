@@ -1,0 +1,30 @@
+---
+title: ""
+pagetitle: "Projects"
+page-layout: full
+toc: false #removes table of contents
+title-block-banner: false 
+format:
+  html:
+    css: styles.css  # <--- Links it ONLY for this page
+listing:
+  contents: projects        # Folder where .qmd files live
+  type: grid                # <--- The Magic Switch
+  page-size: 20
+  sort: "date desc"
+  categories: numbered          # Adds the filter buttons on the right
+  sort-ui: false            # Hides "Sort By" (Cleaner look)
+  filter-ui: false          # Hides "Search Bar" (Cleaner look)
+  fields: [image, date, description, categories]
+  image-height: "200px"     # Keeps all card images uniform
+  grid-item-align: left
+
+---
+::: {.content-visible when-profile="english"}
+## Featured Work
+Select a category from the right to filter the projects.
+:::
+::: {.content-visible when-profile="espanol"}
+## Proyectos destacados
+Seleccione una categoría de la derecha para filtrar los proyectos.
+:::

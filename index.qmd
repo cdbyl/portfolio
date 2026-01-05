@@ -1,0 +1,66 @@
+---
+title: "Carolina Byl"
+lang: en
+about: # More info about this page type: https://quarto.org/docs/websites/website-about.html
+  template: trestles # Options include: jolla, trestles, solana, marquee, broadside
+  image: profile_pic.jpg
+  image-width: 12em
+  image-shape: round
+  links:
+    - text: LinkedIn
+      icon: linkedin
+      url: "https://www.linkedin.com/in/carolina-byl/"
+    - text: GitHub
+      icon: github
+      url: "https://github.com/cdbyl"
+    - text: Email
+      icon: envelope
+      url: "mailto:carolinabyl@gmail.com"
+    - text: CV (english)
+      icon: file-pdf
+      url: "https://github.com/cdbyl/portfolio/blob/main/CV_en.pdf?raw=true"
+    - text: Buenos Aires, AR
+      icon: pin-map-fill
+      href: "#"
+comments: false
+toc: false
+---
+::: {.column-page}
+::: {.content-visible when-profile="english"}
+
+## About me
+GIS Analyst and Environmental Engineer with 4+ years of experience delivering spatial analysis, cartographic products, and cloud-based geospatial solutions for environmental and infrastructure projects. Proven background in enterprise geodatabases, remote sensing analysis using Google Earth Engine, and field data collection workflows. Programming experience in Python, SQL, and JavaScript, applied to support multidisciplinary teams in national and international contexts, including technical instruction and mentoring.
+
+## Education
+
+BS & MS in Environmental Engineering @ [Universidad Nacional de San Martín (UNSAM)](https://unsam.edu.ar/escuelas/ecyt/171/ciencia/ingenieria-ambiental)
+
+Diploma in Applied Geomatics @ [Instituto de Altos Estudios Espaciales Mario Gulich (CONAE - UNC)](https://ig.conae.unc.edu.ar/diplomatura-universitaria-en-geomatica-aplicada/)
+
+------------------------------------------------------------------------
+
+[comment]: <> ( Selected Projects )
+
+[comment]: <> ([likert](https://github.com/jbryer/likert) - Analysis and Visualization of Likert Based Items)
+
+
+:::
+
+::: {.content-visible when-profile="espanol"}
+
+## Sobre mí
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+## Formación Académica
+
+BS & MS in Environmental Engineering @ [Universidad Nacional de San Martín (UNSAM)](https://unsam.edu.ar/escuelas/ecyt/171/ciencia/ingenieria-ambiental)
+
+Diploma in Applied Geomatics @ [Instituto de Altos Estudios Espaciales Mario Gulich (CONAE - UNC)](https://ig.conae.unc.edu.ar/diplomatura-universitaria-en-geomatica-aplicada/)
+
+------------------------------------------------------------------------
+
+[comment]: <> ( Selected Projects )
+
+[comment]: <> ([likert](https://github.com/jbryer/likert) - Analysis and Visualization of Likert Based Items)
+:::
+:::

@@ -1,0 +1,33 @@
+project:
+  title: "GIS Portfolio"
+  output-dir: ./_site/en
+
+website:
+  site-url: https://cdbyl.github.io/portfolio
+  description: "Carolina Byl's Portfolio"
+  favicon: loguito.png
+  open-graph:
+    locale: en_US
+  twitter-card:
+    creator: "@cdbyl"
+  navbar:
+    left:
+      - text: "Home"
+        href: index.html
+      - text: "Projects"
+        href: projects.html
+      #- text: "Blog"
+      #  href: blog.html
+      #- icon: rss
+      #  href: blog.xml
+    # right:
+    #   - text: "English"
+    #     href: ./_site/en
+    #   - text: "Español"
+    #     href: ./_site/es
+  page-footer:
+    left: "Site created with Quarto"
+
+lang: en
+
+

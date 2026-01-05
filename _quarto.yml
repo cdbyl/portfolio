@@ -1,0 +1,17 @@
+project:
+  type: website
+
+profile: 
+  group: [english, espanol]
+  default: english
+
+format:
+  html:
+    respect-user-color-scheme: true
+    theme:
+      light: [lux, light.scss]
+      dark: [lux, dark.scss]
+    css: styles.css
+    toc: true
+
+

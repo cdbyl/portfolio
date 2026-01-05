@@ -1,0 +1,56 @@
+/*-- scss:defaults --*/
+$theme: "lux";
+
+// --- DARK COLORS ---
+$body-bg: #1a1a1a;       // FORCE Dark Background
+$body-color: #f8f9fa;    // Light Text
+$primary: #f8f9fa;       // Light Titles
+$secondary: #f8f9fa;       // Light Titles
+$navbar-bg: #111111;     // Dark Navbar
+$navbar-fg: #f8f9fa;     // Light Navbar Text
+
+// --- Keep your Custom Colors ---
+$success: #40A355;
+$info: #9E54BD; // Keep Purple Title even in dark mode
+$link-color: $success;
+
+// --- Keep your Sizes (Must repeat them to match light mode) ---
+$font-size-base: 1rem;
+$h1-font-size: 1.5rem;
+$h2-font-size: 1.25rem;
+
+/*-- scss:rules --*/
+// --- NAVBAR RULES (Repeat these so the layout doesn't jump) ---
+.navbar {
+  padding-top: 0.75rem !important;
+  padding-bottom: 0.75rem !important;
+  min-height: 40px;
+}
+.navbar-brand {
+  font-size: 1.15rem !important; 
+  font-weight: 700;
+  color: $info !important; 
+  margin-right: 2rem;
+}
+.navbar-nav .nav-link {
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #f8f9fa !important; // Force links to be white in dark mode
+}
+/* Fix visibility of Categories in Dark Mode */
+.quarto-listing-category-title {
+    color: #e0e0e0 !important; /* Light grey/white for the title */
+    font-weight: bold;
+}
+
+.quarto-listing-category .quarto-category {
+    color: #cccccc !important; /* Slightly softer grey for the links */
+}
+
+.quarto-listing-category .quarto-category:hover {
+    color: #ffffff !important; /* Bright white when hovering */
+}
+// Fix headings just in case
+h1, h2, h3 { color: #f8f9fa !important; }
+
