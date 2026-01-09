@@ -18,6 +18,8 @@ $link-color: $success;
 $font-size-base: 1rem;
 $h1-font-size: 1.5rem;
 $h2-font-size: 1.25rem;
+$h3-font-size: 1rem;
+$h4-font-size: 0.75rem;
 
 /*-- scss:rules --*/
 // --- NAVBAR RULES (Repeat these so the layout doesn't jump) ---
@@ -53,4 +55,40 @@ $h2-font-size: 1.25rem;
 }
 // Fix headings just in case
 h1, h2, h3 { color: #f8f9fa !important; }
+
+/* --- CUSTOM MERMAID STYLES --- */
+
+/* 1. GREEN LINES & ARROWS */
+/* Changes the line connecting the boxes */
+.mermaid .edgePath .path {
+    stroke: #40A355 !important;
+    stroke-width: 2px !important;
+    opacity: 1 !important;
+}
+/* Changes the triangle arrowheads */
+.mermaid marker path {
+    fill: #40A355 !important;
+    stroke: #40A355 !important;
+}
+
+/* 2. GREEN BOX BORDERS */
+/* Changes the border of the rectangles */
+.mermaid .node rect,
+.mermaid .node circle,
+.mermaid .node polygon {
+    stroke: #40A355 !important;
+    stroke-width: 2px !important;
+    /* We leave 'fill' alone so it stays Dark in Dark Mode / Light in Light Mode */
+}
+
+/* 3. PURPLE TEXT ON ARROWS */
+/* Changes the text "Crop", "Operations", etc. */
+.mermaid .edgeLabel, 
+.mermaid .edgeLabel span,
+.mermaid .edgeLabel div {
+    color: #9E54BD !important;
+    /* Uses the site background color for the label background */
+    /* This ensures it looks clean on both Dark and Light mode */
+    background-color: var(--bs-body-bg) !important; 
+}
 

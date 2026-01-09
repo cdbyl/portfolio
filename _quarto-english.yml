@@ -20,9 +20,10 @@ website:
       #  href: blog.html
       #- icon: rss
       #  href: blog.xml
-    right:
-      - text: "Español"
-        href: ../es/
+#comentado pero hay que descomentar cuando habilite la versión en español
+    # right:
+    #   - text: "Español"
+    #     href: ../es/
   page-footer:
     left: "Site created with Quarto"
 

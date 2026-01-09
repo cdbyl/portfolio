@@ -20,5 +20,11 @@
   "redirect.qmd": {
     "index.html": "b2a88b4b",
     "redirect.html": "c26d5a9c"
+  },
+  "projects_en/P01_en.qmd": {
+    "P01_en.html": "87f214fe"
+  },
+  "projects_en/P02_en.qmd": {
+    "P02_en.html": "7bf86685"
   }
 }

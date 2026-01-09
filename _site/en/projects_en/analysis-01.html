@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="dcterms.date" content="2019-11-15">
-<meta name="description" content="Applying ACUMAR’s Quality of Life Index (ICV) —which assesses well-being across housing, education, health, and environment— to the neighbor Reconquista River Basin, based on the region’s strong geographic and socioeconomic similarities to the originally studied Matanza-Riachuelo basin. By replicating this methodology, this study aims to generate comparable results and utilize cartographic visualization to identify vulnerable areas, ultimately providing a strategic tool for institutions to optimize resource allocation and design targeted socio-environmental policies.">
+<meta name="description" content="Application of ACUMAR’s Quality of Life Index (ICV/QLI) to the neighbor Reconquista River Basin, based on the region’s strong geographic and socioeconomic similarities to the originally studied Matanza-Riachuelo basin.">
 
 <title>Quality of Life Index – GIS Portfolio</title>
 <style>
@@ -45,9 +45,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-6186cf65a05dad696bbdf15477d0b3a1.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-3b998334e7585d5c980e154ee6a7d179.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-6186cf65a05dad696bbdf15477d0b3a1.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-cc66a47c23b0ffc2f8a09621be57c748.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-998fc9a565e78fa4e948a93e02c5a8d3.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-cc66a47c23b0ffc2f8a09621be57c748.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -79,14 +79,18 @@ ul.task-list li input[type="checkbox"] {
 
 <link rel="stylesheet" href="../styles.css">
 <meta property="og:title" content="Quality of Life Index – GIS Portfolio">
-<meta property="og:description" content="Applying ACUMAR’s Quality of Life Index (ICV) —which assesses well-being across housing, education, health, and environment— to the neighbor Reconquista River Basin, based on the region’s strong geographic and socioeconomic similarities to the originally studied Matanza-Riachuelo basin. By replicating this methodology, this study aims to generate comparable results and utilize cartographic visualization to identify vulnerable areas, ultimately providing a strategic tool for institutions to optimize resource allocation and design targeted socio-environmental policies.">
-<meta property="og:image" content="https://cdbyl.github.io/portfolio/projects_en/images/img1.jpeg">
+<meta property="og:description" content="Application of ACUMAR’s Quality of Life Index (ICV/QLI) to the neighbor Reconquista River Basin, based on the region’s strong geographic and socioeconomic similarities to the originally studied Matanza-Riachuelo basin.">
+<meta property="og:image" content="https://cdbyl.github.io/portfolio/images/P01_cover.png">
 <meta property="og:site_name" content="GIS Portfolio">
 <meta property="og:locale" content="en_US">
+<meta property="og:image:height" content="1080">
+<meta property="og:image:width" content="1535">
 <meta name="twitter:title" content="Quality of Life Index – GIS Portfolio">
-<meta name="twitter:description" content="Applying ACUMAR’s Quality of Life Index (ICV) —which assesses well-being across housing, education, health, and environment— to the neighbor Reconquista River Basin, based on the region’s strong geographic and socioeconomic similarities to the originally studied Matanza-Riachuelo basin. By replicating this methodology, this study aims to generate comparable results and utilize cartographic visualization to identify vulnerable areas, ultimately providing a strategic tool for institutions to optimize resource allocation and design targeted socio-environmental policies.">
-<meta name="twitter:image" content="https://cdbyl.github.io/portfolio/projects_en/images/img1.jpeg">
+<meta name="twitter:description" content="Application of ACUMAR’s Quality of Life Index (ICV/QLI) to the neighbor Reconquista River Basin, based on the region’s strong geographic and socioeconomic similarities to the originally studied Matanza-Riachuelo basin.">
+<meta name="twitter:image" content="https://cdbyl.github.io/portfolio/images/P01_cover.png">
 <meta name="twitter:creator" content="@cdbyl">
+<meta name="twitter:image-height" content="1080">
+<meta name="twitter:image-width" content="1535">
 <meta name="twitter:card" content="summary_large_image">
 </head>
 
@@ -287,12 +291,6 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Projects</span></a>
   </li>  
 </ul>
-            <ul class="navbar-nav navbar-nav-scroll ms-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="../../es"> 
-<span class="menu-text">Español</span></a>
-  </li>  
-</ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
@@ -304,8 +302,23 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#motivations" id="toc-motivations" class="nav-link active" data-scroll-target="#motivations">Motivations</a></li>
+  <li><a href="#data-sources" id="toc-data-sources" class="nav-link" data-scroll-target="#data-sources">Data Sources</a></li>
+  <li><a href="#methodology" id="toc-methodology" class="nav-link" data-scroll-target="#methodology">Methodology</a></li>
+  <li><a href="#process" id="toc-process" class="nav-link" data-scroll-target="#process">Process</a></li>
+  <li><a href="#results-and-analysis" id="toc-results-and-analysis" class="nav-link" data-scroll-target="#results-and-analysis">Results and analysis</a>
+  <ul class="collapse">
+  <li><a href="#dimensional-analysis" id="toc-dimensional-analysis" class="nav-link" data-scroll-target="#dimensional-analysis">Dimensional Analysis</a></li>
+  <li><a href="#spatial-findings" id="toc-spatial-findings" class="nav-link" data-scroll-target="#spatial-findings">Spatial Findings</a></li>
+  </ul></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -323,7 +336,7 @@ ul.task-list li input[type="checkbox"] {
 
 <div>
   <div class="description">
-    Applying ACUMAR’s Quality of Life Index (ICV) —which assesses well-being across housing, education, health, and environment— to the neighbor Reconquista River Basin, based on the region’s strong geographic and socioeconomic similarities to the originally studied Matanza-Riachuelo basin. By replicating this methodology, this study aims to generate comparable results and utilize cartographic visualization to identify vulnerable areas, ultimately providing a strategic tool for institutions to optimize resource allocation and design targeted socio-environmental policies.
+    Application of ACUMAR’s Quality of Life Index (ICV/QLI) to the neighbor Reconquista River Basin, based on the region’s strong geographic and socioeconomic similarities to the originally studied Matanza-Riachuelo basin.
   </div>
 </div>
 
@@ -346,10 +359,76 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>(Your text, maps, and code go here…)</p>
-<p>[Your text and maps go here…]</p>
+<hr>
+<section id="motivations" class="level2">
+<h2 class="anchored" data-anchor-id="motivations">Motivations</h2>
+<p>As the final project for the Geographic Information Systems course in our Environmental Engineering degree, L. Sandri and I decided to analyze a region that is frequently studied across different subjects. Driven by the lack of detailed spatial data for the degraded Reconquista Basin, we focused on generating new insights for this specific area.</p>
+<p>By replicating ACUMAR’s methodology, this study aims to generate comparable results and utilize cartographic visualization to identify vulnerable areas, ultimately providing a strategic tool for institutions to optimize resource allocation and design targeted socio-environmental policies.</p>
+<p>Although we were unable to calculate the full index due to data limitations (specifically the environmental and education components), we successfully computed the <strong>housing</strong> and <strong>health</strong> metrics. This allowed us to perform a comparative analysis against the Matanza-Riachuelo index.</p>
+</section>
+<section id="data-sources" class="level2">
+<h2 class="anchored" data-anchor-id="data-sources">Data Sources</h2>
+<p>All of the data was taken from public open sources:</p>
+<ul>
+<li><a href="https://www.indec.gob.ar/">INDEC</a>: Housing characteristics and access to sanitary infrastructure was taking from the 2010 Census</li>
+<li><a href="https://catalogo.datos.gba.gob.ar/">Datos Abiertos de la Provincia de Buenos Aires</a>: Distribution of public health institutions</li>
+<li><a href="https://www.ign.gob.ar">Instituto Geográfico Nacional</a>: Provincial and department political boundaries, water courses</li>
+<li><a href="https://cim.fadu.uba.ar/productos/">Atlas de la Basura (FADU)</a>: Legal and illegal waste disposal sites (unavailable at the time of access)</li>
+</ul>
+</section>
+<section id="methodology" class="level2">
+<h2 class="anchored" data-anchor-id="methodology">Methodology</h2>
+<p>The methodology followed the one proposed by ACUMAR [1] where:</p>
+<div class="text-center">
+<p>QLI (Quality of Life Index) = 0.25 * HI + 0.25 * PHI + 0.25 EdI + 0.25 * EnI</p>
+</div>
+<ul>
+<li>HI: housing index</li>
+<li>PHI: public health index</li>
+<li>EdI: education index</li>
+<li>EnI: environmental index</li>
+</ul>
+<p>Because of the information available at the time, we were able to calculate both HI and PHI sub-indeces. When comparing with ACUMAR’s data from Matanza-Riachuelo basin, we only compared to those two, and using the same scale for visualization as the one proposed by ACUMAR.</p>
+</section>
+<section id="process" class="level2">
+<h2 class="anchored" data-anchor-id="process">Process</h2>
+<ul>
+<li>All geospatial operations, and cartographic productions were done in QGIS 3.14. Main tools used included native QGIS library for operations such as cut, dissolve, buffer, etc, and the use of the calculator to operate across layers.</li>
+<li>The fundamental spatial unit used was the “radio censal” (census radius), which is the smallest unit of geography used by INDEC for census reporting. All datasets with a coarser resolution were transformed to match this base layer, ensuring the analysis utilized the highest resolution available.</li>
+<li>Although operations were performed for all census radii of all comprising departments of the Basin, for visualization purposes only those within the Basin were shown. This happens because a basin is defined by physical characteristics unlike political boundaries.</li>
+</ul>
+</section>
+<section id="results-and-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="results-and-analysis">Results and analysis</h2>
+<div class="text-center">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/P01_cover.png" class="img-fluid figure-img" style="width:80.0%"></p>
+<figcaption><em>Quality of Life Index for Reconquista Basin compared with Matanza-Riachuelo Basin (only housing and health)</em></figcaption>
+</figure>
+</div>
+</div>
+<p>The methodology proposed by ACUMAR was successfully applied to the Reconquista River Basin to calculate Health and Housing indices, along with an adapted Quality of Life Index. The analysis focused exclusively on “urban” census radii, covering 27.91% of the basin’s surface area but representing <strong>96.21% of the total population</strong> (2,942,680 inhabitants).</p>
+<p>The study revealed that the vast majority of the population lives in vulnerable conditions: * Very High: 0.16% * High: 12.50% * Medium: 10.43% * Low: 37.04% * Very Low: 39.83%</p>
+<section id="dimensional-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="dimensional-analysis">Dimensional Analysis</h3>
+<p>The Health Index revealed widespread needs (driven by a lack of basic sanitary services), whereas the Housing Index showed generally better conditions with specific pockets requiring state intervention.</p>
+</section>
+<section id="spatial-findings" class="level3">
+<h3 class="anchored" data-anchor-id="spatial-findings">Spatial Findings</h3>
+<ul>
+<li>High QLI: Areas closest to CABA and high-density urban zones (often surrounding railway stations) showed the highest quality of life values.</li>
+<li>Low QLI: Conversely, areas in close proximity to water bodies tended to have the lowest values.</li>
+<li>Basin Distribution: No clear distinction was observed between the middle and lower basins in terms of QLI, though the middle basin presented more rural and mixed-use zones.</li>
+</ul>
+</section>
+</section>
+<section id="references" class="level2">
+<h2 class="anchored" data-anchor-id="references">References</h2>
+<p>[1] ACUMAR, (2017a). <u>Anexo III: Fichas metodológicas.</u> <i>Índice de Calidad de Vida (ICV).</i> Available at: <a href="http://www.acumar.gob.ar/indicadores/indice-calidad-vida-icv/">http://www.acumar.gob.ar/indicadores/indice-calidad-vida-icv/</a>, on 19/08/2019.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

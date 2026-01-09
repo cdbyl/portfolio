@@ -1,0 +1,90 @@
+---
+title: "Quality of Life Index"
+description: "Application of ACUMAR’s Quality of Life Index (ICV/QLI) to the neighbor Reconquista River Basin, based on the region's strong geographic and socioeconomic similarities to the originally studied Matanza-Riachuelo basin."
+date: "2019-11-15"
+lang: en
+categories: [QGIS, Cartography, SOTM Latam]
+image: ../images/P01_cover.png  
+format:
+  html:
+    code-fold: true 
+---
+****
+## Project Overview
+As the final project for the Geographic Information Systems course in our Environmental Engineering degree, L. Sandri and I decided to analyze a region that is frequently studied across different subjects. Driven by the lack of detailed spatial data for the degraded Reconquista Basin, we focused on generating new insights for this specific area.
+
+By replicating ACUMAR's methodology, this study aims to generate comparable results and utilize cartographic visualization to identify vulnerable areas, ultimately providing a strategic tool for institutions to optimize resource allocation and design targeted socio-environmental policies.
+
+Although we were unable to calculate the full index due to data limitations (specifically the environmental and education components), we successfully computed the **housing** and **health** metrics. This allowed us to perform a comparative analysis against the Matanza-Riachuelo index.
+
+## Data & Tools
+All of the data was taken from public open sources:
+
+* [INDEC](https://www.indec.gob.ar/): Housing characteristics and access to sanitary infrastructure was taking from the 2010 Census
+* [Datos Abiertos de la Provincia de Buenos Aires](https://catalogo.datos.gba.gob.ar/): Distribution of public health institutions
+* [Instituto Geográfico Nacional](https://www.ign.gob.ar): Provincial and department political boundaries, water courses
+* [Atlas de la Basura (FADU)](https://cim.fadu.uba.ar/productos/): Legal and illegal waste disposal sites (unavailable at the time of access)
+
+* All geospatial operations, and cartographic productions were done in **QGIS 3.14**. Main tools used included native QGIS library for operations such as cut, dissolve, buffer, etc, and the use of the calculator to operate across layers. 
+
+## Workflow
+### Calculations
+The methodology followed the one proposed by ACUMAR [1] where:
+
+::: {.text-center}
+QLI (Quality of Life Index) = 0.25 * HI + 0.25 * PHI + 0.25 EdI + 0.25 * EnI 
+:::
+
+* HI: housing index
+* PHI: public health index
+* EdI: education index
+* EnI: environmental index
+
+Because of the information available at the time, we were able to calculate both HI and PHI sub-indeces. When comparing with ACUMAR's data from Matanza-Riachuelo basin, we only compared to those two, and using the same scale for visualization as the one proposed by ACUMAR. 
+
+### Process
+* The fundamental spatial unit used was the "radio censal" (census radius), which is the smallest unit of geography used by INDEC for census reporting. All datasets with a coarser resolution were transformed to match this base layer, ensuring the analysis utilized the highest resolution available. 
+* Although operations were performed for all census radii of all comprising departments of the Basin, for visualization purposes only those within the Basin were shown. This happens because a basin is defined by physical characteristics unlike political boundaries. 
+
+```{mermaid}
+---
+config:
+  theme: base
+  flowchart:
+    padding: 5
+---
+flowchart TD
+    C(Basin Boundary) -->|Crop| B(Mask) --> Y
+    A(Water courses) -->|Crop| Y
+    D(Census radii) --> |Selection of housing variables| E(Housing Index raw data) --> |Operations| F(Housing Index) --> Y
+    G(Public health establishments) --> |Buffer, dissolve| H(Health Index)
+    I(Static waste disposal map) --> |Digitalization from satellite images| J(Waste disposal locations) --> |Buffer and scoring by distance| H --> Y
+    K(Political boundaries) --> Y([Join]) --> |Visualization| Z(Final cartographic product)
+linkStyle default stroke:#40A355, stroke-width:2px;
+classDef default stroke:#40A355,stroke-width:2px;
+```
+
+## Key Findings & Analysis
+::: {.text-center}
+![_Quality of Life Index for Reconquista Basin compared with Matanza-Riachuelo Basin (only housing and health)_](../images/P01_cover.png){width=100% class="lightbox"}
+:::
+
+The methodology proposed by ACUMAR was successfully applied to the Reconquista River Basin to calculate Health and Housing indices, along with an adapted Quality of Life Index. The analysis focused exclusively on "urban" census radii, covering 27.91% of the basin's surface area but representing **96.21% of the total population** (2,942,680 inhabitants).
+
+The study revealed that the vast majority of the population lives in vulnerable conditions:
+* Very High: 0.16%
+* High: 12.50%
+* Medium: 10.43%
+* Low: 37.04%
+* Very Low: 39.83%
+
+### Dimensional Analysis
+The Health Index revealed widespread needs (driven by a lack of basic sanitary services), whereas the Housing Index showed generally better conditions with specific pockets requiring state intervention.
+
+### Spatial Findings
+* High QLI: Areas closest to CABA and high-density urban zones (often surrounding railway stations) showed the highest quality of life values.
+* Low QLI: Conversely, areas in close proximity to water bodies tended to have the lowest values.
+* Basin Distribution: No clear distinction was observed between the middle and lower basins in terms of QLI, though the middle basin presented more rural and mixed-use zones.
+
+## References
+[1] ACUMAR, (2017a). <u>Anexo III: Fichas metodológicas.</u> <i>Índice de Calidad de Vida (ICV).</i> Available at: [http://www.acumar.gob.ar/indicadores/indice-calidad-vida-icv/](http://www.acumar.gob.ar/indicadores/indice-calidad-vida-icv/), on 19/08/2019.
