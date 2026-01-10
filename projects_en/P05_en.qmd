@@ -1,0 +1,50 @@
+---
+title: "Spatiotemporal visualization of urban growth in Tigre, Buenos Aires, Argentina"
+description: "Created for Day 8 (Urban) of the [#30daymapchallenge](https://30daymapchallenge.com/), this map shows the drastic change in land use for the wetland area."
+date: "2025-11-08"
+lang: en
+categories: [30 day map challenge, Remote Sensing, Cartography, QGIS]
+image: ../images/P05_cover.png
+format:
+  html:
+    code-fold: true 
+---
+****
+## Project Overview
+
+:::: {.columns}
+
+::: {.column width="50%" .text-justify}
+For this map I compared the images from 1984 and 2011 from Tigre (Buenos Aires, Argentina), an area that underwent massive urban transformations.
+
+During this period, numerous gated communities were built over former wetlands, altering the natural landscape with artificial lagoons and geometric layouts that sharply contrast with the original vegetation and terrain, which can be seen in the cartography.
+
+:::
+
+::: {.column width="50%" .text-center}
+![_Capybaras never left the wetlands <br>even though they changed drastically_](../images/P05_capybara.jpg){width=75%}
+:::
+
+::::
+
+::: {.text-justify}
+
+The band combination used highlights urban areas in pink and purple tones, vegetation in green, and water bodies in dark blue or black. These compositions help visually identify qualitative patterns and serve as a first step before applying quantitative methods, such as spectral indices.
+:::
+
+## Data Sources and Tools
+
+* Level 2 [Landsat 5](https://www.usgs.gov/landsat-missions/landsat-5) images from July 1984 and August 2011. 
+  * SWIR (~2140 nm), NIR (~830 nm) and Red (~660 nm) bands were shown for RGB respectively.
+  * The raster resolution is 30 m.
+
+****
+* Made with ![](../images/QGIS.png){width=1em style="vertical-align: middle;"}[GIS](https://qgis.org/project/overview/) 3.22.4-Białowieża
+
+## The completed challenge for Day 8
+
+::: {.text-center}
+
+![](../images/P05_map.png){width=100% class="lightbox"}
+:::
+

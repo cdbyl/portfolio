@@ -1,0 +1,123 @@
+---
+title: "Carbon monoxide concentration in Delta del Paraná, Argentina"
+description: "Created for Day 10 (Air) of the [#30daymapchallenge](https://30daymapchallenge.com/), this project shows the CO levels over the Paraná Delta during the 2020 wildfires vs. 2022 values."
+date: "2025-11-10"
+lang: en
+categories: [30 day map challenge, Remote Sensing, Cartography, QGIS]
+image: ../images/P06_cover.png
+format:
+  html:
+    code-fold: true 
+---
+****
+## Project Overview
+
+:::: {.columns}
+
+::: {.column width="50%" .text-justify}
+[Sentinel-5P (TROPOMI)](https://developers.google.com/earth-engine/datasets/catalog/COPERNICUS_S5P_OFFL_L3_CO) dataset was used to visualize carbon monoxide (CO) levels over the Paraná Delta (Argentina) during the 2020 wildfires, compared with 2022 values.
+
+Remote sensing, in this case, makes it possible to detect fires through atmospheric gases and helps us understand how these events affect not only ecosystems but also nearby cities and communities.
+:::
+
+::: {.column width="50%" .text-center}
+![_Firemen aiding at the wildfires in 2020_](../images/P06_wildfire.jpg){width=63%}
+:::
+
+::::
+:::{.text-justify}
+This work was part of the course “Geostationary Satellites and their Applications to Hydrometeorology”, which I completed at the [Gulich Institute (UNC–CONAE)](https://ig.conae.unc.edu.ar/satelites-geoestacionarios-y-sus-aplicaciones-a-la-hidrometeorologia/) in late 2024.
+:::
+
+## Data Sources and Tools
+
+* ESA's [Sentinel-5P (TROPOMI)](https://developers.google.com/earth-engine/datasets/catalog/COPERNICUS_S5P_OFFL_L3_CO) with Google Earth Engine
+* Province boundaries: [National Geography Institute of Argentina](https://geoportal.ign.gob.ar/)
+* Basemap: [Argenmap by National Geography Institute of Argentina](https://www.ign.gob.ar/AreaServicios/Argenmap/Introduccion)
+
+****
+* Made with ![](../images/QGIS.png){width=1em style="vertical-align: middle;"}[GIS](https://qgis.org/project/overview/) 3.22.4-Białowieża
+
+## Google Earth Engine code
+
+<details>
+<summary>Click to view</summary>
+
+```javascript {filename="GEE Script Day 10-Air"}
+//1. Add Region of Interest (roi) from assets
+Map.addLayer(roi.style({color: 'purple', fillColor: '00000000', width: 2}), {}, 'ROI');
+
+// 2. Define dates
+var date1_start = '2020-07-01';
+var date1_end   = '2020-07-31'; 
+
+var date2_start = '2022-07-01';
+var date2_end   = '2022-07-31';
+
+// 3. Define palette and create legend
+var vizParams = {
+  min: 0.0197,
+  max: 0.037,
+  palette: ['#fff7ec', '#fee8c8', '#fdd49e', '#fdbb84', '#fc8d59', '#ef6548', '#d7301f', '#b30000', '#7f0000']
+};
+
+// 4. Load the TROPOMI CO collection and filter
+var image1 = ee.ImageCollection('COPERNICUS/S5P/OFFL/L3_CO')
+  .select('CO_column_number_density').filterDate(date1_start, date1_end).mean().clip(roi);
+var image2 = ee.ImageCollection('COPERNICUS/S5P/OFFL/L3_CO')
+  .select('CO_column_number_density').filterDate(date2_start, date2_end).mean().clip(roi);
+
+// 5. Visualization in GEE with legend
+// 5.1. Legend function
+function addLegend(title, palette, min, max, labels) {
+  var legend = ui.Panel({
+    style: {
+      position: 'bottom-left',
+      padding: '8px 15px'
+    }
+  });
+  var legendTitle = ui.Label({
+    value: title,
+    style: {
+      fontWeight: 'bold',
+      fontSize: '14px',
+      margin: '0 0 4px 0',
+      color: 'black'
+    }
+  });
+  legend.add(legendTitle);
+  var lon = ee.Image.pixelLonLat().select('longitude');
+  var gradient = lon.multiply((max - min) / 100.0).add(min);
+  var legendImage = gradient.visualize({min: min, max: max, palette: palette});
+  var thumbnail = ui.Thumbnail({
+    image: legendImage,
+    params: {bbox: [0, 0, 100, 10], dimensions: '200x20'},
+    style: {margin: '4px 0'}
+  });
+  legend.add(thumbnail);
+  var labelPanel = ui.Panel({
+    widgets: [
+      ui.Label(labels[0], {margin: '0 8px'}),
+      ui.Label(labels[1], {margin: '0 8px', textAlign: 'right', stretch: 'horizontal'})
+    ],
+    layout: ui.Panel.Layout.flow('horizontal')
+  });
+
+  legend.add(labelPanel);
+  Map.add(legend);
+}
+// 5.2. Final viz
+addLegend('CO (mol/m²)', vizParams.palette, vizParams.min, vizParams.max, [vizParams.min, vizParams.max]);
+Map.centerObject(roi);
+Map.addLayer(image1, vizParams, 'CO Level - 2020');
+Map.addLayer(image2, vizParams, 'CO Level - 2022');
+```
+</details>
+
+## The completed challenge for Day 10
+
+::: {.text-center}
+
+![](../images/P06_map.png){width=100% class="lightbox"}
+:::
+

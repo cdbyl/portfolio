@@ -74,3 +74,13 @@ div.quarto-listing-category {
     /* This ensures it looks clean on both Dark and Light mode */
     background-color: var(--bs-body-bg) !important; 
 }
+
+/* Removes background color from code blocks */
+div.sourceCode, pre.sourceCode, code.sourceCode {
+  background-color: transparent !important;
+}
+
+/* Optional: If you also want to remove the border */
+div.sourceCode {
+  border: none !important;
+}

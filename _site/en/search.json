@@ -42,6 +42,34 @@
     "text": "The completed challenge for Day 2"
   },
   {
+    "objectID": "projects_en/P02_en.html#project-overview",
+    "href": "projects_en/P02_en.html#project-overview",
+    "title": "London plane trees in Buenos Aires City",
+    "section": "Project Overview",
+    "text": "Project Overview\nLondon plane trees release their seeds in spring. Since they are so abundant in Buenos Aires City, the season is noticeable by almost everyone due to the annoyance of frequent sneezing and seeds getting into one’s eyes.\n\n\n\n\n\n\nPlatanus x hispanica leaves and fruits\n\n\n\n\n\n\n\nFruit and seeds"
+  },
+  {
+    "objectID": "projects_en/P02_en.html#data-sources-and-tools",
+    "href": "projects_en/P02_en.html#data-sources-and-tools",
+    "title": "London plane trees in Buenos Aires City",
+    "section": "Data Sources and Tools",
+    "text": "Data Sources and Tools\n\n2017/2018 Urban Tree Census, available on IDECABA\nTrees in streets and parks: IDECABA\nParks and other green spaces: IDECABA\nBasemap: CARTO Voyager\n\n\n\nMade with GIS 3.22.4-Białowieża"
+  },
+  {
+    "objectID": "projects_en/P02_en.html#the-completed-challenge-for-day-1",
+    "href": "projects_en/P02_en.html#the-completed-challenge-for-day-1",
+    "title": "London plane trees in Buenos Aires City",
+    "section": "The completed challenge for Day 1",
+    "text": "The completed challenge for Day 1"
+  },
+  {
+    "objectID": "projects_en/P02_en.html#results-and-analysis",
+    "href": "projects_en/P02_en.html#results-and-analysis",
+    "title": "London plane trees in Buenos Aires City",
+    "section": "Results and analysis",
+    "text": "Results and analysis\nThe comunas with the most plane trees are:\n\nComuna 15: Agronomía, Paternal, Parque Chas, Chacarita, Villa Crespo, Villa Ortúzar\nComuna 11: Villa del Parque, Villa Devoto, Villa Gral. Mitre, Villa Santa Rita\nComuna 14: Palermo"
+  },
+  {
     "objectID": "projects_en/P01_en.html#project-overview",
     "href": "projects_en/P01_en.html#project-overview",
     "title": "Quality of Life Index",
@@ -98,32 +126,53 @@
     "text": "No matching items"
   },
   {
-    "objectID": "projects_en/P02_en.html#project-overview",
-    "href": "projects_en/P02_en.html#project-overview",
-    "title": "London plane trees in Buenos Aires City",
+    "objectID": "projects_en/P05_en.html#project-overview",
+    "href": "projects_en/P05_en.html#project-overview",
+    "title": "Spatiotemporal visualization of urban growth in Tigre, Buenos Aires, Argentina",
     "section": "Project Overview",
-    "text": "Project Overview\nLondon plane trees release their seeds in spring. Since they are so abundant in Buenos Aires City, the season is noticeable by almost everyone due to the annoyance of frequent sneezing and seeds getting into one’s eyes.\n\n\n\n\n\n\nPlatanus x hispanica leaves and fruits\n\n\n\n\n\n\n\nFruit and seeds"
+    "text": "Project Overview\n\n\nFor this map I compared the images from 1984 and 2011 from Tigre (Buenos Aires, Argentina), an area that underwent massive urban transformations.\nDuring this period, numerous gated communities were built over former wetlands, altering the natural landscape with artificial lagoons and geometric layouts that sharply contrast with the original vegetation and terrain, which can be seen in the cartography.\n\n\n\n\nCapybaras never left the wetlands even though they changed drastically\n\n\n\n\n\nThe band combination used highlights urban areas in pink and purple tones, vegetation in green, and water bodies in dark blue or black. These compositions help visually identify qualitative patterns and serve as a first step before applying quantitative methods, such as spectral indices."
   },
   {
-    "objectID": "projects_en/P02_en.html#data-sources-and-tools",
-    "href": "projects_en/P02_en.html#data-sources-and-tools",
-    "title": "London plane trees in Buenos Aires City",
+    "objectID": "projects_en/P05_en.html#data-sources-and-tools",
+    "href": "projects_en/P05_en.html#data-sources-and-tools",
+    "title": "Spatiotemporal visualization of urban growth in Tigre, Buenos Aires, Argentina",
     "section": "Data Sources and Tools",
-    "text": "Data Sources and Tools\n\n2017/2018 Urban Tree Census, available on IDECABA\nTrees in streets and parks: IDECABA\nParks and other green spaces: IDECABA\nBasemap: CARTO Voyager\n\n\n\nMade with GIS 3.22.4-Białowieża"
+    "text": "Data Sources and Tools\n\nLevel 2 Landsat 5 images from July 1984 and August 2011.\n\nSWIR (~2140 nm), NIR (~830 nm) and Red (~660 nm) bands were shown for RGB respectively.\nThe raster resolution is 30 m.\n\n\n\n\nMade with GIS 3.22.4-Białowieża"
   },
   {
-    "objectID": "projects_en/P02_en.html#the-completed-challenge-for-day-1",
-    "href": "projects_en/P02_en.html#the-completed-challenge-for-day-1",
-    "title": "London plane trees in Buenos Aires City",
-    "section": "The completed challenge for Day 1",
-    "text": "The completed challenge for Day 1"
+    "objectID": "projects_en/P05_en.html#the-completed-challenge-for-day-8",
+    "href": "projects_en/P05_en.html#the-completed-challenge-for-day-8",
+    "title": "Spatiotemporal visualization of urban growth in Tigre, Buenos Aires, Argentina",
+    "section": "The completed challenge for Day 8",
+    "text": "The completed challenge for Day 8"
   },
   {
-    "objectID": "projects_en/P02_en.html#results-and-analysis",
-    "href": "projects_en/P02_en.html#results-and-analysis",
-    "title": "London plane trees in Buenos Aires City",
-    "section": "Results and analysis",
-    "text": "Results and analysis\nThe comunas with the most plane trees are:\n\nComuna 15: Agronomía, Paternal, Parque Chas, Chacarita, Villa Crespo, Villa Ortúzar\nComuna 11: Villa del Parque, Villa Devoto, Villa Gral. Mitre, Villa Santa Rita\nComuna 14: Palermo"
+    "objectID": "projects_en/P06_en.html#project-overview",
+    "href": "projects_en/P06_en.html#project-overview",
+    "title": "Carbon monoxide concentration in Delta del Paraná, Argentina",
+    "section": "Project Overview",
+    "text": "Project Overview\n\n\nSentinel-5P (TROPOMI) dataset was used to visualize carbon monoxide (CO) levels over the Paraná Delta (Argentina) during the 2020 wildfires, compared with 2022 values.\nRemote sensing, in this case, makes it possible to detect fires through atmospheric gases and helps us understand how these events affect not only ecosystems but also nearby cities and communities.\n\n\n\n\nFiremen aiding at the wildfires in 2020\n\n\n\n\n\nThis work was part of the course “Geostationary Satellites and their Applications to Hydrometeorology”, which I completed at the Gulich Institute (UNC–CONAE) in late 2024."
+  },
+  {
+    "objectID": "projects_en/P06_en.html#data-sources-and-tools",
+    "href": "projects_en/P06_en.html#data-sources-and-tools",
+    "title": "Carbon monoxide concentration in Delta del Paraná, Argentina",
+    "section": "Data Sources and Tools",
+    "text": "Data Sources and Tools\n\nESA’s Sentinel-5P (TROPOMI) with Google Earth Engine\nProvince boundaries: National Geography Institute of Argentina\nBasemap: Argenmap by National Geography Institute of Argentina\n\n\n\nMade with GIS 3.22.4-Białowieża"
+  },
+  {
+    "objectID": "projects_en/P06_en.html#google-earth-engine-code",
+    "href": "projects_en/P06_en.html#google-earth-engine-code",
+    "title": "Carbon monoxide concentration in Delta del Paraná, Argentina",
+    "section": "Google Earth Engine code",
+    "text": "Google Earth Engine code\n\n\nClick to view\n\n\n\nGEE Script Day 10-Air\n\n//1. Add Region of Interest (roi) from assets\nMap.addLayer(roi.style({color: 'purple', fillColor: '00000000', width: 2}), {}, 'ROI');\n\n// 2. Define dates\nvar date1_start = '2020-07-01';\nvar date1_end   = '2020-07-31'; \n\nvar date2_start = '2022-07-01';\nvar date2_end   = '2022-07-31';\n\n// 3. Define palette and create legend\nvar vizParams = {\n  min: 0.0197,\n  max: 0.037,\n  palette: ['#fff7ec', '#fee8c8', '#fdd49e', '#fdbb84', '#fc8d59', '#ef6548', '#d7301f', '#b30000', '#7f0000']\n};\n\n// 4. Load the TROPOMI CO collection and filter\nvar image1 = ee.ImageCollection('COPERNICUS/S5P/OFFL/L3_CO')\n  .select('CO_column_number_density').filterDate(date1_start, date1_end).mean().clip(roi);\nvar image2 = ee.ImageCollection('COPERNICUS/S5P/OFFL/L3_CO')\n  .select('CO_column_number_density').filterDate(date2_start, date2_end).mean().clip(roi);\n\n// 5. Visualization in GEE with legend\n// 5.1. Legend function\nfunction addLegend(title, palette, min, max, labels) {\n  var legend = ui.Panel({\n    style: {\n      position: 'bottom-left',\n      padding: '8px 15px'\n    }\n  });\n  var legendTitle = ui.Label({\n    value: title,\n    style: {\n      fontWeight: 'bold',\n      fontSize: '14px',\n      margin: '0 0 4px 0',\n      color: 'black'\n    }\n  });\n  legend.add(legendTitle);\n  var lon = ee.Image.pixelLonLat().select('longitude');\n  var gradient = lon.multiply((max - min) / 100.0).add(min);\n  var legendImage = gradient.visualize({min: min, max: max, palette: palette});\n  var thumbnail = ui.Thumbnail({\n    image: legendImage,\n    params: {bbox: [0, 0, 100, 10], dimensions: '200x20'},\n    style: {margin: '4px 0'}\n  });\n  legend.add(thumbnail);\n  var labelPanel = ui.Panel({\n    widgets: [\n      ui.Label(labels[0], {margin: '0 8px'}),\n      ui.Label(labels[1], {margin: '0 8px', textAlign: 'right', stretch: 'horizontal'})\n    ],\n    layout: ui.Panel.Layout.flow('horizontal')\n  });\n\n  legend.add(labelPanel);\n  Map.add(legend);\n}\n// 5.2. Final viz\naddLegend('CO (mol/m²)', vizParams.palette, vizParams.min, vizParams.max, [vizParams.min, vizParams.max]);\nMap.centerObject(roi);\nMap.addLayer(image1, vizParams, 'CO Level - 2020');\nMap.addLayer(image2, vizParams, 'CO Level - 2022');"
+  },
+  {
+    "objectID": "projects_en/P06_en.html#the-completed-challenge-for-day-10",
+    "href": "projects_en/P06_en.html#the-completed-challenge-for-day-10",
+    "title": "Carbon monoxide concentration in Delta del Paraná, Argentina",
+    "section": "The completed challenge for Day 10",
+    "text": "The completed challenge for Day 10"
   },
   {
     "objectID": "projects_en/P04_en.html#project-overview",
