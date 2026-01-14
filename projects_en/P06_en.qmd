@@ -21,7 +21,7 @@ Remote sensing, in this case, makes it possible to detect fires through atmosphe
 :::
 
 ::: {.column width="50%" .text-center}
-![_Firemen aiding at the wildfires in 2020_](../images/P06_wildfire.jpg){width=63%}
+![_Firemen aiding at the wildfires in 2020._](../images/P06_wildfire.jpg){width=63%}
 :::
 
 ::::

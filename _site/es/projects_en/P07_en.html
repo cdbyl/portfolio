@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2025-11-11">
+<meta name="description" content="Created for Day 11 (Minimal map) of the #30daymapchallenge, this project shows the minimum elements to describe a city">
 
-<title>Projects – GIS Portfolio</title>
+<title>Minimalist map of an Argentinian town – Portfolio SIG</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,31 +25,32 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./loguito.png" rel="icon" type="image/png">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-b758ccaa5987ceb1b75504551e579abf.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-7d73048fd0439d083df640c6ef166eb3.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-fbf50fe87046acf771bd55642d3941d4.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-7d73048fd0439d083df640c6ef166eb3.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../loguito.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-b758ccaa5987ceb1b75504551e579abf.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-7d73048fd0439d083df640c6ef166eb3.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-fbf50fe87046acf771bd55642d3941d4.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-7d73048fd0439d083df640c6ef166eb3.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -75,80 +78,18 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
 
-    const options = {
-      valueNames: ['listing-image','listing-date','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="styles.css">
-<meta property="og:title" content="Projects">
-<meta property="og:description" content="Carolina Byl’s Portfolio">
-<meta property="og:image" content="https://cdbyl.github.io/portfolio/images/P09_cover.png">
-<meta property="og:site_name" content="GIS Portfolio">
-<meta property="og:locale" content="en_US">
-<meta property="og:image:height" content="242">
-<meta property="og:image:width" content="357">
-<meta name="twitter:title" content="Projects">
-<meta name="twitter:description" content="Carolina Byl’s Portfolio">
-<meta name="twitter:image" content="https://cdbyl.github.io/portfolio/images/P09_cover.png">
+<link rel="stylesheet" href="../styles.css">
+<meta property="og:title" content="Minimalist map of an Argentinian town – Portfolio SIG">
+<meta property="og:description" content="Created for Day 11 (Minimal map) of the #30daymapchallenge, this project shows the minimum elements to describe a city">
+<meta property="og:image" content="https://cdbyl.github.io/portfolio/images/P07_cover.jpeg">
+<meta property="og:site_name" content="Portfolio SIG">
+<meta property="og:locale" content="es_ES">
+<meta name="twitter:title" content="Minimalist map of an Argentinian town – Portfolio SIG">
+<meta name="twitter:description" content="Created for Day 11 (Minimal map) of the #30daymapchallenge, this project shows the minimum elements to describe a city">
+<meta name="twitter:image" content="https://cdbyl.github.io/portfolio/images/P07_cover.jpeg">
 <meta name="twitter:creator" content="@cdbyl">
-<meta name="twitter:image-height" content="242">
-<meta name="twitter:image-width" content="357">
 <meta name="twitter:card" content="summary_large_image">
 </head>
 
@@ -330,8 +271,8 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">GIS Portfolio</span>
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Portfolio SIG</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -341,12 +282,18 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
-<span class="menu-text">Home</span></a>
+    <a class="nav-link" href="../index.html"> 
+<span class="menu-text">Inicio</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./projects.html" aria-current="page"> 
-<span class="menu-text">Projects</span></a>
+    <a class="nav-link" href="../projects-es.html"> 
+<span class="menu-text">Proyectos</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../en/"> 
+<span class="menu-text">English</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -357,280 +304,102 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(9)</span></div><div class="category" data-category="MzAlMjBkYXklMjBtYXAlMjBjaGFsbGVuZ2U=">30 day map challenge <span class="quarto-category-count">(8)</span></div><div class="category" data-category="Q2FydG9ncmFwaHk=">Cartography <span class="quarto-category-count">(9)</span></div><div class="category" data-category="UUdJUw==">QGIS <span class="quarto-category-count">(9)</span></div><div class="category" data-category="UmVtb3RlJTIwU2Vuc2luZw==">Remote Sensing <span class="quarto-category-count">(3)</span></div><div class="category" data-category="U09UTSUyMExhdGFt">SOTM Latam <span class="quarto-category-count">(1)</span></div></div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#project-overview" id="toc-project-overview" class="nav-link active" data-scroll-target="#project-overview">Project Overview</a></li>
+  <li><a href="#data-sources-and-tools" id="toc-data-sources-and-tools" class="nav-link" data-scroll-target="#data-sources-and-tools">Data Sources and Tools</a></li>
+  <li><a href="#the-completed-challenge-for-day-11" id="toc-the-completed-challenge-for-day-11" class="nav-link" data-scroll-target="#the-completed-challenge-for-day-11">The completed challenge for Day 11</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
-<main class="content column-page-left" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content" id="quarto-document-content">
 
 
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Minimalist map of an Argentinian town</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">30 day map challenge</div>
+    <div class="quarto-category">Cartography</div>
+    <div class="quarto-category">QGIS</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    Created for Day 11 (Minimal map) of the <a href="https://30daymapchallenge.com/">#30daymapchallenge</a>, this project shows the minimum elements to describe a city
+  </div>
+</div>
 
 
+<div class="quarto-title-meta">
 
-<section id="featured-work" class="level2">
-<h2 class="anchored" data-anchor-id="featured-work">Featured Work</h2>
-<p>Select a category from the right to filter the projects.</p>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">November 11, 2025</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
 
+
+</header>
+
+
+<hr>
+<section id="project-overview" class="level2">
+<h2 class="anchored" data-anchor-id="project-overview">Project Overview</h2>
+<p>This map was produced using the most simple and minimalistic symbology I could: no labels, no names. You can try and figure out if you know the place just from the looks of it, click to show the hidden text at the end of this page.</p>
+</section>
+<section id="data-sources-and-tools" class="level2">
+<h2 class="anchored" data-anchor-id="data-sources-and-tools">Data Sources and Tools</h2>
+<ul>
+<li>Province and department boundaries, settlements, water bodies, railways and rail stations, roads: <a href="https://geoportal.ign.gob.ar/">National Geography Institute of Argentina</a></li>
+</ul>
+<hr>
+<ul>
+<li>Made with <img src="../images/QGIS.png" class="img-fluid" style="vertical-align: middle;;width:1em"><a href="https://qgis.org/project/overview/">GIS</a> 3.22.4-Białowieża</li>
+</ul>
+</section>
+<section id="the-completed-challenge-for-day-11" class="level2">
+<h2 class="anchored" data-anchor-id="the-completed-challenge-for-day-11">The completed challenge for Day 11</h2>
+<div class="text-center">
+<p><a href="../images/P07_map.jpeg" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="../images/P07_map.jpeg" class="img-fluid" style="width:100.0%"></a></p>
+</div>
+<details>
+<summary>
+First hint
+</summary>
+It’s in Argentina
+</details>
+<details>
+<summary>
+Second hint
+</summary>
+It’s in Buenos Aires Province (not the Capital city)
+</details>
+<details>
+<summary>
+Answer!
+</summary>
+It’s <a href="https://en.wikipedia.org/wiki/Chascom%C3%BAs">Chascomús</a>
+</details>
 
 
 </section>
 
-<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="MzAlMjBkYXklMjBtYXAlMjBjaGFsbGVuZ2UlMkNDYXJ0b2dyYXBoeSUyQ1FHSVM=" data-listing-date-sort="1763607600000" data-listing-file-modified-sort="1768352129628" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="136">
-<a href="./projects_en/P09_en.html" class="quarto-grid-link">
-</a><div class="quarto-grid-item card h-100 card-left"><a href="./projects_en/P09_en.html" class="quarto-grid-link">
-<p class="card-img-top">
-<img loading="lazy" src="./images/P09_cover.png" class="thumbnail-image card-img" style="height: 200px;">
-</p>
-</a><div class="card-body post-contents"><a href="./projects_en/P09_en.html" class="quarto-grid-link">
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('MzAlMjBkYXklMjBtYXAlMjBjaGFsbGVuZ2U='); return false;">30 day map challenge</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('Q2FydG9ncmFwaHk='); return false;">Cartography</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('UUdJUw=='); return false;">QGIS</div>
-
-</div>
-</a><div class="card-text listing-description delink"><a href="./projects_en/P09_en.html" class="quarto-grid-link">
-</a><p><a href="./projects_en/P09_en.html" class="quarto-grid-link">Created for Day 20 (Water) of the </a><a href="https://30daymapchallenge.com/">#30daymapchallenge</a>, this project shows hidden watercourses in Buenos Aires City.</p>
-</div>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-Nov 20, 2025
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="g-col-1" data-index="1" data-categories="MzAlMjBkYXklMjBtYXAlMjBjaGFsbGVuZ2UlMkNSZW1vdGUlMjBTZW5zaW5nJTJDQ2FydG9ncmFwaHklMkNRR0lT" data-listing-date-sort="1763175600000" data-listing-file-modified-sort="1768351601543" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="499">
-<a href="./projects_en/P08_en.html" class="quarto-grid-link">
-</a><div class="quarto-grid-item card h-100 card-left"><a href="./projects_en/P08_en.html" class="quarto-grid-link">
-<p class="card-img-top">
-<img loading="lazy" src="./images/P08_cover.png" class="thumbnail-image card-img" style="height: 200px;">
-</p>
-</a><div class="card-body post-contents"><a href="./projects_en/P08_en.html" class="quarto-grid-link">
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('MzAlMjBkYXklMjBtYXAlMjBjaGFsbGVuZ2U='); return false;">30 day map challenge</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('UmVtb3RlJTIwU2Vuc2luZw=='); return false;">Remote Sensing</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('Q2FydG9ncmFwaHk='); return false;">Cartography</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('UUdJUw=='); return false;">QGIS</div>
-
-</div>
-</a><div class="card-text listing-description delink"><a href="./projects_en/P08_en.html" class="quarto-grid-link">
-</a><p><a href="./projects_en/P08_en.html" class="quarto-grid-link">Created for Day 15 (Fire) of the </a><a href="https://30daymapchallenge.com/">#30daymapchallenge</a>, this project shows the dNBR over the Paraná Delta before and after the 2020 wildfires.</p>
-</div>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-Nov 15, 2025
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="g-col-1" data-index="2" data-categories="MzAlMjBkYXklMjBtYXAlMjBjaGFsbGVuZ2UlMkNDYXJ0b2dyYXBoeSUyQ1FHSVM=" data-listing-date-sort="1762830000000" data-listing-file-modified-sort="1768346226563" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="112">
-<a href="./projects_en/P07_en.html" class="quarto-grid-link">
-</a><div class="quarto-grid-item card h-100 card-left"><a href="./projects_en/P07_en.html" class="quarto-grid-link">
-<p class="card-img-top">
-<img loading="lazy" src="./images/P07_cover.jpeg" class="thumbnail-image card-img" style="height: 200px;">
-</p>
-</a><div class="card-body post-contents"><a href="./projects_en/P07_en.html" class="quarto-grid-link">
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('MzAlMjBkYXklMjBtYXAlMjBjaGFsbGVuZ2U='); return false;">30 day map challenge</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('Q2FydG9ncmFwaHk='); return false;">Cartography</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('UUdJUw=='); return false;">QGIS</div>
-
-</div>
-</a><div class="card-text listing-description delink"><a href="./projects_en/P07_en.html" class="quarto-grid-link">
-</a><p><a href="./projects_en/P07_en.html" class="quarto-grid-link">Created for Day 11 (Minimal map) of the </a><a href="https://30daymapchallenge.com/">#30daymapchallenge</a>, this project shows the minimum elements to describe a city</p>
-</div>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-Nov 11, 2025
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="g-col-1" data-index="3" data-categories="MzAlMjBkYXklMjBtYXAlMjBjaGFsbGVuZ2UlMkNSZW1vdGUlMjBTZW5zaW5nJTJDQ2FydG9ncmFwaHklMkNRR0lT" data-listing-date-sort="1762743600000" data-listing-file-modified-sort="1768012385574" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="443">
-<a href="./projects_en/P06_en.html" class="quarto-grid-link">
-</a><div class="quarto-grid-item card h-100 card-left"><a href="./projects_en/P06_en.html" class="quarto-grid-link">
-<p class="card-img-top">
-<img loading="lazy" src="./images/P06_cover.png" class="thumbnail-image card-img" style="height: 200px;">
-</p>
-</a><div class="card-body post-contents"><a href="./projects_en/P06_en.html" class="quarto-grid-link">
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('MzAlMjBkYXklMjBtYXAlMjBjaGFsbGVuZ2U='); return false;">30 day map challenge</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('UmVtb3RlJTIwU2Vuc2luZw=='); return false;">Remote Sensing</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('Q2FydG9ncmFwaHk='); return false;">Cartography</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('UUdJUw=='); return false;">QGIS</div>
-
-</div>
-</a><div class="card-text listing-description delink"><a href="./projects_en/P06_en.html" class="quarto-grid-link">
-</a><p><a href="./projects_en/P06_en.html" class="quarto-grid-link">Created for Day 10 (Air) of the </a><a href="https://30daymapchallenge.com/">#30daymapchallenge</a>, this project shows the CO levels over the Paraná Delta during the 2020 wildfires vs.…</p>
-</div>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-Nov 10, 2025
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="g-col-1" data-index="4" data-categories="MzAlMjBkYXklMjBtYXAlMjBjaGFsbGVuZ2UlMkNSZW1vdGUlMjBTZW5zaW5nJTJDQ2FydG9ncmFwaHklMkNRR0lT" data-listing-date-sort="1762570800000" data-listing-file-modified-sort="1768001077101" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="175">
-<a href="./projects_en/P05_en.html" class="quarto-grid-link">
-</a><div class="quarto-grid-item card h-100 card-left"><a href="./projects_en/P05_en.html" class="quarto-grid-link">
-<p class="card-img-top">
-<img loading="lazy" src="./images/P05_cover.png" class="thumbnail-image card-img" style="height: 200px;">
-</p>
-</a><div class="card-body post-contents"><a href="./projects_en/P05_en.html" class="quarto-grid-link">
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('MzAlMjBkYXklMjBtYXAlMjBjaGFsbGVuZ2U='); return false;">30 day map challenge</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('UmVtb3RlJTIwU2Vuc2luZw=='); return false;">Remote Sensing</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('Q2FydG9ncmFwaHk='); return false;">Cartography</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('UUdJUw=='); return false;">QGIS</div>
-
-</div>
-</a><div class="card-text listing-description delink"><a href="./projects_en/P05_en.html" class="quarto-grid-link">
-</a><p><a href="./projects_en/P05_en.html" class="quarto-grid-link">Created for Day 8 (Urban) of the </a><a href="https://30daymapchallenge.com/">#30daymapchallenge</a>, this map shows the drastic change in land use for the wetland area.</p>
-</div>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-Nov 8, 2025
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="g-col-1" data-index="5" data-categories="MzAlMjBkYXklMjBtYXAlMjBjaGFsbGVuZ2UlMkNDYXJ0b2dyYXBoeSUyQ1FHSVM=" data-listing-date-sort="1762225200000" data-listing-file-modified-sort="1767923654145" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="142">
-<a href="./projects_en/P04_en.html" class="quarto-grid-link">
-</a><div class="quarto-grid-item card h-100 card-left"><a href="./projects_en/P04_en.html" class="quarto-grid-link">
-<p class="card-img-top">
-<img loading="lazy" src="./images/P04_cover.png" class="thumbnail-image card-img" style="height: 200px;">
-</p>
-</a><div class="card-body post-contents"><a href="./projects_en/P04_en.html" class="quarto-grid-link">
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('MzAlMjBkYXklMjBtYXAlMjBjaGFsbGVuZ2U='); return false;">30 day map challenge</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('Q2FydG9ncmFwaHk='); return false;">Cartography</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('UUdJUw=='); return false;">QGIS</div>
-
-</div>
-</a><div class="card-text listing-description delink"><a href="./projects_en/P04_en.html" class="quarto-grid-link">
-</a><p><a href="./projects_en/P04_en.html" class="quarto-grid-link">Created for Day 4 (My Data) of the </a><a href="https://30daymapchallenge.com/">#30daymapchallenge</a>, this map shows the route I tracked with my GPS on the <em>Vuelta en Bici</em></p>
-</div>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-Nov 4, 2025
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="g-col-1" data-index="6" data-categories="MzAlMjBkYXklMjBtYXAlMjBjaGFsbGVuZ2UlMkNDYXJ0b2dyYXBoeSUyQ1FHSVM=" data-listing-date-sort="1762052400000" data-listing-file-modified-sort="1767923106329" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="113">
-<a href="./projects_en/P03_en.html" class="quarto-grid-link">
-</a><div class="quarto-grid-item card h-100 card-left"><a href="./projects_en/P03_en.html" class="quarto-grid-link">
-<p class="card-img-top">
-<img loading="lazy" src="./images/P03_cover.png" class="thumbnail-image card-img" style="height: 200px;">
-</p>
-</a><div class="card-body post-contents"><a href="./projects_en/P03_en.html" class="quarto-grid-link">
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('MzAlMjBkYXklMjBtYXAlMjBjaGFsbGVuZ2U='); return false;">30 day map challenge</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('Q2FydG9ncmFwaHk='); return false;">Cartography</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('UUdJUw=='); return false;">QGIS</div>
-
-</div>
-</a><div class="card-text listing-description delink"><a href="./projects_en/P03_en.html" class="quarto-grid-link">
-</a><p><a href="./projects_en/P03_en.html" class="quarto-grid-link">Created for Day 2 (Lines) of the </a><a href="https://30daymapchallenge.com/">#30daymapchallenge</a>, this project visualizes the relief with all of it’s ups-and-downs in Pampa Linda…</p>
-</div>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-Nov 2, 2025
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="g-col-1" data-index="7" data-categories="MzAlMjBkYXklMjBtYXAlMjBjaGFsbGVuZ2UlMkNDYXJ0b2dyYXBoeSUyQ1FHSVM=" data-listing-date-sort="1761966000000" data-listing-file-modified-sort="1767923106246" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="124">
-<a href="./projects_en/P02_en.html" class="quarto-grid-link">
-</a><div class="quarto-grid-item card h-100 card-left"><a href="./projects_en/P02_en.html" class="quarto-grid-link">
-<p class="card-img-top">
-<img loading="lazy" src="./images/P02_cover.png" class="thumbnail-image card-img" style="height: 200px;">
-</p>
-</a><div class="card-body post-contents"><a href="./projects_en/P02_en.html" class="quarto-grid-link">
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('MzAlMjBkYXklMjBtYXAlMjBjaGFsbGVuZ2U='); return false;">30 day map challenge</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('Q2FydG9ncmFwaHk='); return false;">Cartography</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('UUdJUw=='); return false;">QGIS</div>
-
-</div>
-</a><div class="card-text listing-description delink"><a href="./projects_en/P02_en.html" class="quarto-grid-link">
-</a><p><a href="./projects_en/P02_en.html" class="quarto-grid-link">Created for Day 1 (Points) of the </a><a href="https://30daymapchallenge.com/">#30daymapchallenge</a>, this project visualizes the density of London plane trees in Buenos Aires City —…</p>
-</div>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-Nov 1, 2025
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="g-col-1" data-index="8" data-categories="UUdJUyUyQ0NhcnRvZ3JhcGh5JTJDU09UTSUyMExhdGFt" data-listing-date-sort="1573786800000" data-listing-file-modified-sort="1767923106165" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="714">
-<a href="./projects_en/P01_en.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./images/P01_cover.png" class="thumbnail-image card-img" style="height: 200px;">
-</p>
-<div class="card-body post-contents">
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('UUdJUw=='); return false;">QGIS</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('Q2FydG9ncmFwaHk='); return false;">Cartography</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('U09UTSUyMExhdGFt'); return false;">SOTM Latam</div>
-
-</div>
-<div class="card-text listing-description delink">
-<p>Application of ACUMAR’s Quality of Life Index (ICV/QLI) to the neighbor Reconquista River Basin, based on the region’s strong geographic and socioeconomic similarities to…</p>
-</div>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-Nov 15, 2019
-</div>
-</div>
-</div>
-</div></a>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     // Ensure there is a toggle, if there isn't float one in the top right
@@ -1048,7 +817,7 @@ Nov 15, 2019
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p>Site created with Quarto</p>
+<p>Sitio creado con Quarto</p>
 </div>   
     <div class="nav-footer-center">
       &nbsp;
@@ -1058,6 +827,38 @@ Nov 15, 2019
     </div>
   </div>
 </footer>
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 

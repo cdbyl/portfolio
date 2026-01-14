@@ -4,14 +4,21 @@
     "href": "index.html",
     "title": "Carolina Byl",
     "section": "",
-    "text": "GIS Analyst and Environmental Engineer with 4+ years of experience delivering spatial analysis, cartographic products, and cloud-based geospatial solutions for environmental and infrastructure projects. Proven background in enterprise geodatabases, remote sensing analysis using Google Earth Engine, and field data collection workflows. Programming experience in Python, SQL, and JavaScript, applied to support multidisciplinary teams in national and international contexts, including technical instruction and mentoring.\n\n\n\nBS & MS in Environmental Engineering @ Universidad Nacional de San Martín (UNSAM)\nDiploma in Applied Geomatics @ Instituto de Altos Estudios Espaciales Mario Gulich (CONAE - UNC)"
+    "text": "GIS Analyst and Environmental Engineer with 4+ years of experience delivering spatial analysis, cartographic products, and cloud-based geospatial solutions for environmental and infrastructure projects.\nProven background in enterprise geodatabases, remote sensing analysis using Google Earth Engine, and field data collection workflows.\nProgramming experience in Python, SQL, and JavaScript, applied to support multidisciplinary teams in national and international contexts, including technical instruction and mentoring.\n\n\n\n\nYou can find projects I’ve worked on in the “Projects” tab on this site.\nI hope you can check out some of the projects I’ve worked on in this site.\nYou’re welcome to check out some of the projects I’ve worked on in this site.\n\n\n\n\nBS & MS in Environmental Engineering @ Universidad Nacional de San Martín (UNSAM)\nDiploma in Applied Geomatics @ Instituto de Altos Estudios Espaciales Mario Gulich (CONAE - UNC)"
   },
   {
     "objectID": "index.html#about-me",
     "href": "index.html#about-me",
     "title": "Carolina Byl",
     "section": "",
-    "text": "GIS Analyst and Environmental Engineer with 4+ years of experience delivering spatial analysis, cartographic products, and cloud-based geospatial solutions for environmental and infrastructure projects. Proven background in enterprise geodatabases, remote sensing analysis using Google Earth Engine, and field data collection workflows. Programming experience in Python, SQL, and JavaScript, applied to support multidisciplinary teams in national and international contexts, including technical instruction and mentoring."
+    "text": "GIS Analyst and Environmental Engineer with 4+ years of experience delivering spatial analysis, cartographic products, and cloud-based geospatial solutions for environmental and infrastructure projects.\nProven background in enterprise geodatabases, remote sensing analysis using Google Earth Engine, and field data collection workflows.\nProgramming experience in Python, SQL, and JavaScript, applied to support multidisciplinary teams in national and international contexts, including technical instruction and mentoring."
+  },
+  {
+    "objectID": "index.html#wip---draft",
+    "href": "index.html#wip---draft",
+    "title": "Carolina Byl",
+    "section": "",
+    "text": "You can find projects I’ve worked on in the “Projects” tab on this site.\nI hope you can check out some of the projects I’ve worked on in this site.\nYou’re welcome to check out some of the projects I’ve worked on in this site."
   },
   {
     "objectID": "index.html#education",
@@ -19,6 +26,27 @@
     "title": "Carolina Byl",
     "section": "",
     "text": "BS & MS in Environmental Engineering @ Universidad Nacional de San Martín (UNSAM)\nDiploma in Applied Geomatics @ Instituto de Altos Estudios Espaciales Mario Gulich (CONAE - UNC)"
+  },
+  {
+    "objectID": "projects_en/P09_en.html#project-overview",
+    "href": "projects_en/P09_en.html#project-overview",
+    "title": "Hydrographic basins in Buenos Aires City",
+    "section": "Project Overview",
+    "text": "Project Overview\n\n\nThis map shows watercourses of Buenos Aires, which are hidden in tunnels beneath the city. On the map, some of the drainage tunnels added in recent years are highlighted:\n\nVega Relief Tunnel — built to address the recurring floods in the Belgrano area.\nMaldonado Relief Tunnel — also constructed to reduce flooding along Av. Juan B. Justo.\nCildañez Relief Tunnel — part of the Maldonado’s flow is diverted here so that the Cildañez never runs completely dry, helping prevent bad odors under the area of the Olympic Village built for the 2018 Youth Olympic Games (see picture).\n\n\n\n\n\nMaldonado stream going into Cildañez stream."
+  },
+  {
+    "objectID": "projects_en/P09_en.html#data-sources-and-tools",
+    "href": "projects_en/P09_en.html#data-sources-and-tools",
+    "title": "Hydrographic basins in Buenos Aires City",
+    "section": "Data Sources and Tools",
+    "text": "Data Sources and Tools\n\nWatercourses and tunnels, hydrographic basins: IDECABA\nBasemap: CARTO Voyager\n\n\n\nMade with GIS 3.22.4-Białowieża"
+  },
+  {
+    "objectID": "projects_en/P09_en.html#the-completed-challenge-for-day-20",
+    "href": "projects_en/P09_en.html#the-completed-challenge-for-day-20",
+    "title": "Hydrographic basins in Buenos Aires City",
+    "section": "The completed challenge for Day 20",
+    "text": "The completed challenge for Day 20"
   },
   {
     "objectID": "projects_en/P03_en.html#project-overview",
@@ -105,6 +133,13 @@
     "text": "References\n[1] ACUMAR, (2017a). Anexo III: Fichas metodológicas. Índice de Calidad de Vida (ICV). Available at: http://www.acumar.gob.ar/indicadores/indice-calidad-vida-icv/, on 19/08/2019."
   },
   {
+    "objectID": "projects-es.html",
+    "href": "projects-es.html",
+    "title": "GIS Portfolio",
+    "section": "",
+    "text": "No matching items"
+  },
+  {
     "objectID": "projects.html",
     "href": "projects.html",
     "title": "GIS Portfolio",
@@ -119,11 +154,32 @@
     "text": "Select a category from the right to filter the projects."
   },
   {
-    "objectID": "projects-es.html",
-    "href": "projects-es.html",
-    "title": "GIS Portfolio",
-    "section": "",
-    "text": "No matching items"
+    "objectID": "projects_en/P08_en.html#project-overview",
+    "href": "projects_en/P08_en.html#project-overview",
+    "title": "Burn severity for Delta del Paraná, Argentina",
+    "section": "Project Overview",
+    "text": "Project Overview\n\nThe wildfires in the Paraná Delta, Argentina - previously studied for Day 10 challenge - were brought up again to analyze from the point of view of its vegetation.\nSentinel-2 imagery was used in Google Earth Engine to calculate NDVI before and after the fire, highlighting the presence and condition of the vegetation immediately prior to and following the events. Using these NDVI values, dNBR was also computed, an index commonly used to estimate burn severity.\nNegative NDVI values were masked and interpreted as water bodies or watercourses."
+  },
+  {
+    "objectID": "projects_en/P08_en.html#data-sources-and-tools",
+    "href": "projects_en/P08_en.html#data-sources-and-tools",
+    "title": "Burn severity for Delta del Paraná, Argentina",
+    "section": "Data Sources and Tools",
+    "text": "Data Sources and Tools\n\nESA’s Harmonized Sentinel-2 (MSI) with Google Earth Engine\nProvince boundaries: National Geography Institute of Argentina\nBasemap: Argenmap by National Geography Institute of Argentina\n\n\n\nMade with GIS 3.22.4-Białowieża"
+  },
+  {
+    "objectID": "projects_en/P08_en.html#google-earth-engine-code",
+    "href": "projects_en/P08_en.html#google-earth-engine-code",
+    "title": "Burn severity for Delta del Paraná, Argentina",
+    "section": "Google Earth Engine code",
+    "text": "Google Earth Engine code\n\n\nClick to view\n\n\n\nGEE Script Day 15-Fire\n\n// 1. Load ROI\nMap.addLayer(roi.style({color: 'purple', fillColor: '00000000', width: 2}), {}, 'ROI');\n\n// 2. Define dates for before and after the fires\nvar date1 = ee.DateRange('2019-12-01', '2019-12-31');\nvar date2 = ee.DateRange('2020-09-01', '2020-09-30');\n\n// 3. Load Sentinel-2 imagery, filter by cloud % and roi bounds\nvar s2_pre = ee.ImageCollection('COPERNICUS/S2_SR_HARMONIZED')\n  .filterDate(date1)\n  .filterBounds(roi)\n  .filterMetadata('CLOUDY_PIXEL_PERCENTAGE', 'less_than', 30) // 30% clouds max\n  .median()\n  .clip(roi);\n\nvar s2_post = ee.ImageCollection('COPERNICUS/S2_SR_HARMONIZED')\n  .filterDate(date2)\n  .filterBounds(roi)\n  .filterMetadata('CLOUDY_PIXEL_PERCENTAGE', 'less_than', 30)\n  .median()\n  .clip(roi);\n\n// 4. Calculate NDVI\nvar ndvi_pre = s2_pre.normalizedDifference(['B8', 'B4']).rename('NDVI_pre');\nvar ndvi_post = s2_post.normalizedDifference(['B8', 'B4']).rename('NDVI_post');\n\n// 5. Calculate NBR and dNBR\nvar nbr_pre = s2_pre.normalizedDifference(['B8', 'B12']).rename('NBR_pre');\nvar nbr_post = s2_post.normalizedDifference(['B8', 'B12']).rename('NBR_post');\nvar dnbr = nbr_pre.subtract(nbr_post).rename('dNBR');\n\n// 6. Establish visualization parameters\nvar ndviParams = {min: 0, max: 1, palette: ['brown','yellow','green']};\nvar dnbrParams = {min: -0.5, max: 0.5, palette: ['blue','white','red']};\n\n// 7. Plot map\nMap.centerObject(roi);\nMap.addLayer(ndvi_pre, ndviParams, 'NDVI pre-incendios');\nMap.addLayer(ndvi_post, ndviParams, 'NDVI post-incendios');\nMap.addLayer(dnbr, dnbrParams, 'dNBR pre-post');\n\n// 7.1 Legend function\nfunction addLegend(title, palette, min, max, labels) {\n  var legend = ui.Panel({\n    style: {\n      position: 'bottom-left',\n      padding: '8px 15px'\n    }\n  });\n\n  var legendTitle = ui.Label({\n    value: title,\n    style: {\n      fontWeight: 'bold',\n      fontSize: '14px',\n      margin: '0 0 4px 0',\n      color: 'black'\n    }\n  });\n\n  legend.add(legendTitle);\n\n  var lon = ee.Image.pixelLonLat().select('longitude');\n  var gradient = lon.multiply((max - min) / 100.0).add(min);\n  var legendImage = gradient.visualize({min: min, max: max, palette: palette});\n\n  var thumbnail = ui.Thumbnail({\n    image: legendImage,\n    params: {bbox: [0, 0, 100, 10], dimensions: '200x20'},\n    style: {margin: '4px 0'}\n  });\n\n  legend.add(thumbnail);\n\n  var labelPanel = ui.Panel({\n    widgets: [\n      ui.Label(labels[0], {margin: '0 8px'}),\n      ui.Label(labels[1], {margin: '0 8px', textAlign: 'right', stretch: 'horizontal'})\n    ],\n    layout: ui.Panel.Layout.flow('horizontal')\n  });\n\n  legend.add(labelPanel);\n\n  Map.add(legend);\n}\n\n// 7.2 Add legends to map\n\n// NDVI legend\naddLegend(\n  'NDVI',\n  ['brown','yellow','green'],\n  0, 1,\n  ['Low vegetation', 'High vegetation']\n);\n\n// dNBR legend\naddLegend(\n  'dNBR',\n  ['blue','white','red'],\n  -0.5, 0.5,\n  ['Negative (regrowth)', 'Positive (burned)']\n);"
+  },
+  {
+    "objectID": "projects_en/P08_en.html#the-completed-challenge-for-day-15",
+    "href": "projects_en/P08_en.html#the-completed-challenge-for-day-15",
+    "title": "Burn severity for Delta del Paraná, Argentina",
+    "section": "The completed challenge for Day 15",
+    "text": "The completed challenge for Day 15"
   },
   {
     "objectID": "projects_en/P05_en.html#project-overview",
@@ -151,7 +207,7 @@
     "href": "projects_en/P06_en.html#project-overview",
     "title": "Carbon monoxide concentration in Delta del Paraná, Argentina",
     "section": "Project Overview",
-    "text": "Project Overview\n\n\nSentinel-5P (TROPOMI) dataset was used to visualize carbon monoxide (CO) levels over the Paraná Delta (Argentina) during the 2020 wildfires, compared with 2022 values.\nRemote sensing, in this case, makes it possible to detect fires through atmospheric gases and helps us understand how these events affect not only ecosystems but also nearby cities and communities.\n\n\n\n\nFiremen aiding at the wildfires in 2020\n\n\n\n\n\nThis work was part of the course “Geostationary Satellites and their Applications to Hydrometeorology”, which I completed at the Gulich Institute (UNC–CONAE) in late 2024."
+    "text": "Project Overview\n\n\nSentinel-5P (TROPOMI) dataset was used to visualize carbon monoxide (CO) levels over the Paraná Delta (Argentina) during the 2020 wildfires, compared with 2022 values.\nRemote sensing, in this case, makes it possible to detect fires through atmospheric gases and helps us understand how these events affect not only ecosystems but also nearby cities and communities.\n\n\n\n\nFiremen aiding at the wildfires in 2020.\n\n\n\n\n\nThis work was part of the course “Geostationary Satellites and their Applications to Hydrometeorology”, which I completed at the Gulich Institute (UNC–CONAE) in late 2024."
   },
   {
     "objectID": "projects_en/P06_en.html#data-sources-and-tools",
@@ -194,5 +250,26 @@
     "title": "My tour around Buenos Aires City",
     "section": "The completed challenge for Day 4",
     "text": "The completed challenge for Day 4"
+  },
+  {
+    "objectID": "projects_en/P07_en.html#project-overview",
+    "href": "projects_en/P07_en.html#project-overview",
+    "title": "Minimalist map of an Argentinian town",
+    "section": "Project Overview",
+    "text": "Project Overview\nThis map was produced using the most simple and minimalistic symbology I could: no labels, no names. You can try and figure out if you know the place just from the looks of it, click to show the hidden text at the end of this page."
+  },
+  {
+    "objectID": "projects_en/P07_en.html#data-sources-and-tools",
+    "href": "projects_en/P07_en.html#data-sources-and-tools",
+    "title": "Minimalist map of an Argentinian town",
+    "section": "Data Sources and Tools",
+    "text": "Data Sources and Tools\n\nProvince and department boundaries, settlements, water bodies, railways and rail stations, roads: National Geography Institute of Argentina\n\n\n\nMade with GIS 3.22.4-Białowieża"
+  },
+  {
+    "objectID": "projects_en/P07_en.html#the-completed-challenge-for-day-11",
+    "href": "projects_en/P07_en.html#the-completed-challenge-for-day-11",
+    "title": "Minimalist map of an Argentinian town",
+    "section": "The completed challenge for Day 11",
+    "text": "The completed challenge for Day 11\n\n\n\n\n\nFirst hint\n\nIt’s in Argentina\n\n\n\nSecond hint\n\nIt’s in Buenos Aires Province (not the Capital city)\n\n\n\nAnswer!\n\nIt’s Chascomús"
   }
 ]

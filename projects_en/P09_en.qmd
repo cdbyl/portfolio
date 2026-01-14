@@ -1,0 +1,44 @@
+---
+title: "Hydrographic basins in Buenos Aires City"
+description: "Created for Day 20 (Water) of the [#30daymapchallenge](https://30daymapchallenge.com/), this project shows hidden watercourses in Buenos Aires City."
+date: "2025-11-20"
+lang: en
+categories: [30 day map challenge, Cartography, QGIS]
+image: ../images/P09_cover.png
+format:
+  html:
+    code-fold: true 
+---
+****
+## Project Overview
+:::: {.columns}
+
+::: {.column width="50%" .text-justify}
+This map shows watercourses of Buenos Aires, which are hidden in tunnels beneath the city. On the map, some of the drainage tunnels added in recent years are highlighted:
+
+* Vega Relief Tunnel — built to address the recurring floods in the Belgrano area.
+* Maldonado Relief Tunnel — also constructed to reduce flooding along Av. Juan B. Justo.
+* Cildañez Relief Tunnel — part of the Maldonado’s flow is diverted here so that the Cildañez never runs completely dry, helping prevent bad odors under the area of the Olympic Village built for the 2018 Youth Olympic Games (see picture).
+:::
+
+::: {.column width="50%" .text-center}
+![_Maldonado stream going into Cildañez stream._](../images/P09_cildanez.jpeg){width=70%}
+:::
+
+::::
+
+## Data Sources and Tools
+
+* Watercourses and tunnels, hydrographic basins: [IDECABA](https://idecaba.buenosaires.gob.ar/)
+* Basemap: [CARTO Voyager](https://carto.com/blog/new-voyager-basemap)
+
+****
+* Made with ![](../images/QGIS.png){width=1em style="vertical-align: middle;"}[GIS](https://qgis.org/project/overview/) 3.22.4-Białowieża
+
+## The completed challenge for Day 20
+
+::: {.text-center}
+
+![](../images/P09_map.png){width=100% class="lightbox"}
+:::
+
