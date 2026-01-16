@@ -1,9 +1,9 @@
 ---
-title: "Spatiotemporal visualization of urban growth in Tigre, Buenos Aires, Argentina"
-description: "Created for Day 8 (Urban) of the [#30daymapchallenge](https://30daymapchallenge.com/), this map shows the drastic change in land use for the wetland area."
+title: "Spatiotemporal visualization of urban growth"
+description: "Created for Day 8 (Urban) of the [#30daymapchallenge](https://30daymapchallenge.com/), this map shows the drastic change in land use for the wetland area in Tigre, Buenos Aires, Argentina."
 date: "2025-11-08"
 lang: en
-categories: [30 day map challenge, Remote Sensing]
+categories: [30 day map challenge, Remote Sensing, Urban planning]
 image: ../images/P05_cover.png
 format:
   html:

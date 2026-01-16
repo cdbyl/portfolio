@@ -3,7 +3,7 @@ title: "Street names of Pergamino"
 description: "Created for Day 24 (Places and their names) of the [#30daymapchallenge](https://30daymapchallenge.com/), this map shows the street names for Pergamino city in Buenos Aires Province, Argentina"
 date: "2025-11-24"
 lang: en
-categories: [30 day map challenge]
+categories: [30 day map challenge, Interactive map]
 image: ../images/P10_cover.png
 format:
   html:
@@ -43,7 +43,7 @@ library(leaflet)
 
 # 1. LOAD & CLEAN DATA
 sf_use_s2(FALSE)
-streets <- st_read("../shapefiles/red_vial.geojson" , quiet = TRUE)
+streets <- st_read("../vectors/red_vial.geojson" , quiet = TRUE)
 streets <- st_zm(streets) 
 
 # 2. PREPARE COLORS AND CATEGORIES
@@ -73,7 +73,7 @@ pal_cate <- colorFactor(palette = cate_palette, domain = streets$CATE)
 
 # 3. RENDER MAP
 leaflet(streets) %>%
-  setView(lng = -60.57, lat = -33.89, zoom = 13) %>%
+  setView(lng = -60.56, lat = -33.895, zoom = 13) %>%
   addTiles(
     urlTemplate = "https://wms.ign.gob.ar/geoserver/gwc/service/tms/1.0.0/capabaseargenmap@EPSG%3A3857@png/{z}/{x}/{-y}.png",
     attribution = "Argenmap - IGN Argentina",

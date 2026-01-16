@@ -24,7 +24,6 @@ ul.task-list li input[type="checkbox"] {
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
 <script src="site_libs/quarto-search/autocomplete.umd.js"></script>
 <script src="site_libs/quarto-search/fuse.min.js"></script>
@@ -85,7 +84,7 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-image','listing-date','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-filename','listing-title','listing-image','listing-date','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
       searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description","listing-categories"],
     };
@@ -361,7 +360,7 @@ window.Quarto = {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(12)</span></div><div class="category" data-category="MzAlMjBkYXklMjBtYXAlMjBjaGFsbGVuZ2U=">30 day map challenge <span class="quarto-category-count">(11)</span></div><div class="category" data-category="UmVtb3RlJTIwU2Vuc2luZw==">Remote Sensing <span class="quarto-category-count">(4)</span></div><div class="category" data-category="U3RhdGUlMjBvZiUyMHRoZSUyME1hcCUyMExhdGFt">State of the Map Latam <span class="quarto-category-count">(1)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(12)</span></div><div class="category" data-category="MzAlMjBkYXklMjBtYXAlMjBjaGFsbGVuZ2U=">30 day map challenge <span class="quarto-category-count">(11)</span></div><div class="category" data-category="SW50ZXJhY3RpdmUlMjBtYXA=">Interactive map <span class="quarto-category-count">(2)</span></div><div class="category" data-category="UmVtb3RlJTIwU2Vuc2luZw==">Remote Sensing <span class="quarto-category-count">(4)</span></div><div class="category" data-category="U3RhdGUlMjBvZiUyMHRoZSUyME1hcCUyMExhdGFt">State of the Map Latam <span class="quarto-category-count">(1)</span></div><div class="category" data-category="VXJiYW4lMjBwbGFubmluZw==">Urban planning <span class="quarto-category-count">(4)</span></div></div></div>
 <!-- main -->
 <main class="content column-page-left" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
@@ -386,6 +385,9 @@ window.Quarto = {
 <img loading="lazy" src="./images/P12_cover.png" class="thumbnail-image card-img" style="height: 200px;">
 </p>
 </a><div class="card-body post-contents"><a href="./projects_en/P12_en.html" class="quarto-grid-link">
+<h5 class="no-anchor card-title listing-title">
+Night lights, railways and settlements
+</h5>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('MzAlMjBkYXklMjBtYXAlMjBjaGFsbGVuZ2U='); return false;">30 day map challenge</div>
@@ -402,18 +404,28 @@ Nov 28, 2025
 </div>
 </div>
 </div>
+<div class="card-footer">
+<div class="card-filename listing-filename">P12_en.qmd</div>
 </div>
 </div>
-<div class="g-col-1" data-index="1" data-categories="MzAlMjBkYXklMjBtYXAlMjBjaGFsbGVuZ2U=" data-listing-date-sort="1764126000000" data-listing-file-modified-sort="1768446964563" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="661">
+</div>
+<div class="g-col-1" data-index="1" data-categories="MzAlMjBkYXklMjBtYXAlMjBjaGFsbGVuZ2UlMkNJbnRlcmFjdGl2ZSUyMG1hcCUyQ1VyYmFuJTIwcGxhbm5pbmc=" data-listing-date-sort="1764126000000" data-listing-file-modified-sort="1768604167471" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="586">
 <a href="./projects_en/P11_en.html" class="quarto-grid-link">
 </a><div class="quarto-grid-item card h-100 card-left"><a href="./projects_en/P11_en.html" class="quarto-grid-link">
 <p class="card-img-top">
 <img loading="lazy" src="./images/P11_cover.png" class="thumbnail-image card-img" style="height: 200px;">
 </p>
 </a><div class="card-body post-contents"><a href="./projects_en/P11_en.html" class="quarto-grid-link">
+<h5 class="no-anchor card-title listing-title">
+Bike lanes in Buenos Aires City
+</h5>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('MzAlMjBkYXklMjBtYXAlMjBjaGFsbGVuZ2U='); return false;">30 day map challenge</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('SW50ZXJhY3RpdmUlMjBtYXA='); return false;">Interactive map</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('VXJiYW4lMjBwbGFubmluZw=='); return false;">Urban planning</div>
 
 </div>
 </a><div class="card-text listing-description delink"><a href="./projects_en/P11_en.html" class="quarto-grid-link">
@@ -425,18 +437,26 @@ Nov 26, 2025
 </div>
 </div>
 </div>
+<div class="card-footer">
+<div class="card-filename listing-filename">P11_en.qmd</div>
 </div>
 </div>
-<div class="g-col-1" data-index="2" data-categories="MzAlMjBkYXklMjBtYXAlMjBjaGFsbGVuZ2U=" data-listing-date-sort="1763953200000" data-listing-file-modified-sort="1768422288916" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="416">
+</div>
+<div class="g-col-1" data-index="2" data-categories="MzAlMjBkYXklMjBtYXAlMjBjaGFsbGVuZ2UlMkNJbnRlcmFjdGl2ZSUyMG1hcA==" data-listing-date-sort="1763953200000" data-listing-file-modified-sort="1768590351438" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="416">
 <a href="./projects_en/P10_en.html" class="quarto-grid-link">
 </a><div class="quarto-grid-item card h-100 card-left"><a href="./projects_en/P10_en.html" class="quarto-grid-link">
 <p class="card-img-top">
 <img loading="lazy" src="./images/P10_cover.png" class="thumbnail-image card-img" style="height: 200px;">
 </p>
 </a><div class="card-body post-contents"><a href="./projects_en/P10_en.html" class="quarto-grid-link">
+<h5 class="no-anchor card-title listing-title">
+Street names of Pergamino
+</h5>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('MzAlMjBkYXklMjBtYXAlMjBjaGFsbGVuZ2U='); return false;">30 day map challenge</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('SW50ZXJhY3RpdmUlMjBtYXA='); return false;">Interactive map</div>
 
 </div>
 </a><div class="card-text listing-description delink"><a href="./projects_en/P10_en.html" class="quarto-grid-link">
@@ -448,18 +468,26 @@ Nov 24, 2025
 </div>
 </div>
 </div>
+<div class="card-footer">
+<div class="card-filename listing-filename">P10_en.qmd</div>
 </div>
 </div>
-<div class="g-col-1" data-index="3" data-categories="MzAlMjBkYXklMjBtYXAlMjBjaGFsbGVuZ2U=" data-listing-date-sort="1763607600000" data-listing-file-modified-sort="1768420270847" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="136">
+</div>
+<div class="g-col-1" data-index="3" data-categories="MzAlMjBkYXklMjBtYXAlMjBjaGFsbGVuZ2UlMkNVcmJhbiUyMHBsYW5uaW5n" data-listing-date-sort="1763607600000" data-listing-file-modified-sort="1768582798659" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="136">
 <a href="./projects_en/P09_en.html" class="quarto-grid-link">
 </a><div class="quarto-grid-item card h-100 card-left"><a href="./projects_en/P09_en.html" class="quarto-grid-link">
 <p class="card-img-top">
 <img loading="lazy" src="./images/P09_cover.png" class="thumbnail-image card-img" style="height: 200px;">
 </p>
 </a><div class="card-body post-contents"><a href="./projects_en/P09_en.html" class="quarto-grid-link">
+<h5 class="no-anchor card-title listing-title">
+Hidden hydrographic basins in Buenos Aires City
+</h5>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('MzAlMjBkYXklMjBtYXAlMjBjaGFsbGVuZ2U='); return false;">30 day map challenge</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('VXJiYW4lMjBwbGFubmluZw=='); return false;">Urban planning</div>
 
 </div>
 </a><div class="card-text listing-description delink"><a href="./projects_en/P09_en.html" class="quarto-grid-link">
@@ -471,6 +499,9 @@ Nov 20, 2025
 </div>
 </div>
 </div>
+<div class="card-footer">
+<div class="card-filename listing-filename">P09_en.qmd</div>
+</div>
 </div>
 </div>
 <div class="g-col-1" data-index="4" data-categories="MzAlMjBkYXklMjBtYXAlMjBjaGFsbGVuZ2UlMkNSZW1vdGUlMjBTZW5zaW5n" data-listing-date-sort="1763175600000" data-listing-file-modified-sort="1768420270936" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="499">
@@ -480,6 +511,9 @@ Nov 20, 2025
 <img loading="lazy" src="./images/P08_cover.png" class="thumbnail-image card-img" style="height: 200px;">
 </p>
 </a><div class="card-body post-contents"><a href="./projects_en/P08_en.html" class="quarto-grid-link">
+<h5 class="no-anchor card-title listing-title">
+Burn severity for Delta del Paraná, Argentina
+</h5>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('MzAlMjBkYXklMjBtYXAlMjBjaGFsbGVuZ2U='); return false;">30 day map challenge</div>
@@ -496,6 +530,9 @@ Nov 15, 2025
 </div>
 </div>
 </div>
+<div class="card-footer">
+<div class="card-filename listing-filename">P08_en.qmd</div>
+</div>
 </div>
 </div>
 <div class="g-col-1" data-index="5" data-categories="MzAlMjBkYXklMjBtYXAlMjBjaGFsbGVuZ2U=" data-listing-date-sort="1762830000000" data-listing-file-modified-sort="1768420271019" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="112">
@@ -505,6 +542,9 @@ Nov 15, 2025
 <img loading="lazy" src="./images/P07_cover.jpeg" class="thumbnail-image card-img" style="height: 200px;">
 </p>
 </a><div class="card-body post-contents"><a href="./projects_en/P07_en.html" class="quarto-grid-link">
+<h5 class="no-anchor card-title listing-title">
+Minimalist map of an Argentinian town
+</h5>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('MzAlMjBkYXklMjBtYXAlMjBjaGFsbGVuZ2U='); return false;">30 day map challenge</div>
@@ -519,15 +559,21 @@ Nov 11, 2025
 </div>
 </div>
 </div>
+<div class="card-footer">
+<div class="card-filename listing-filename">P07_en.qmd</div>
 </div>
 </div>
-<div class="g-col-1" data-index="6" data-categories="MzAlMjBkYXklMjBtYXAlMjBjaGFsbGVuZ2UlMkNSZW1vdGUlMjBTZW5zaW5n" data-listing-date-sort="1762743600000" data-listing-file-modified-sort="1768420271102" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="443">
+</div>
+<div class="g-col-1" data-index="6" data-categories="MzAlMjBkYXklMjBtYXAlMjBjaGFsbGVuZ2UlMkNSZW1vdGUlMjBTZW5zaW5n" data-listing-date-sort="1762743600000" data-listing-file-modified-sort="1768582628275" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="443">
 <a href="./projects_en/P06_en.html" class="quarto-grid-link">
 </a><div class="quarto-grid-item card h-100 card-left"><a href="./projects_en/P06_en.html" class="quarto-grid-link">
 <p class="card-img-top">
 <img loading="lazy" src="./images/P06_cover.png" class="thumbnail-image card-img" style="height: 200px;">
 </p>
 </a><div class="card-body post-contents"><a href="./projects_en/P06_en.html" class="quarto-grid-link">
+<h5 class="no-anchor card-title listing-title">
+Carbon monoxide concentration in Delta del Paraná fires
+</h5>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('MzAlMjBkYXklMjBtYXAlMjBjaGFsbGVuZ2U='); return false;">30 day map challenge</div>
@@ -536,7 +582,7 @@ Nov 11, 2025
 
 </div>
 </a><div class="card-text listing-description delink"><a href="./projects_en/P06_en.html" class="quarto-grid-link">
-</a><p><a href="./projects_en/P06_en.html" class="quarto-grid-link">Created for Day 10 (Air) of the </a><a href="https://30daymapchallenge.com/">#30daymapchallenge</a>, this project shows the CO levels over the Paraná Delta during the 2020 wildfires vs.…</p>
+</a><p><a href="./projects_en/P06_en.html" class="quarto-grid-link">Created for Day 10 (Air) of the </a><a href="https://30daymapchallenge.com/">#30daymapchallenge</a>, this project shows the CO levels over the Paraná Delta, Argentina, during the 2020…</p>
 </div>
 <div class="card-attribution card-text-small end">
 <div class="listing-date">
@@ -544,24 +590,32 @@ Nov 10, 2025
 </div>
 </div>
 </div>
+<div class="card-footer">
+<div class="card-filename listing-filename">P06_en.qmd</div>
 </div>
 </div>
-<div class="g-col-1" data-index="7" data-categories="MzAlMjBkYXklMjBtYXAlMjBjaGFsbGVuZ2UlMkNSZW1vdGUlMjBTZW5zaW5n" data-listing-date-sort="1762570800000" data-listing-file-modified-sort="1768420271184" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="175">
+</div>
+<div class="g-col-1" data-index="7" data-categories="MzAlMjBkYXklMjBtYXAlMjBjaGFsbGVuZ2UlMkNSZW1vdGUlMjBTZW5zaW5nJTJDVXJiYW4lMjBwbGFubmluZw==" data-listing-date-sort="1762570800000" data-listing-file-modified-sort="1768582798488" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="175">
 <a href="./projects_en/P05_en.html" class="quarto-grid-link">
 </a><div class="quarto-grid-item card h-100 card-left"><a href="./projects_en/P05_en.html" class="quarto-grid-link">
 <p class="card-img-top">
 <img loading="lazy" src="./images/P05_cover.png" class="thumbnail-image card-img" style="height: 200px;">
 </p>
 </a><div class="card-body post-contents"><a href="./projects_en/P05_en.html" class="quarto-grid-link">
+<h5 class="no-anchor card-title listing-title">
+Spatiotemporal visualization of urban growth
+</h5>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('MzAlMjBkYXklMjBtYXAlMjBjaGFsbGVuZ2U='); return false;">30 day map challenge</div>
 
 <div class="listing-category" onclick="window.quartoListingCategory('UmVtb3RlJTIwU2Vuc2luZw=='); return false;">Remote Sensing</div>
 
+<div class="listing-category" onclick="window.quartoListingCategory('VXJiYW4lMjBwbGFubmluZw=='); return false;">Urban planning</div>
+
 </div>
 </a><div class="card-text listing-description delink"><a href="./projects_en/P05_en.html" class="quarto-grid-link">
-</a><p><a href="./projects_en/P05_en.html" class="quarto-grid-link">Created for Day 8 (Urban) of the </a><a href="https://30daymapchallenge.com/">#30daymapchallenge</a>, this map shows the drastic change in land use for the wetland area.</p>
+</a><p><a href="./projects_en/P05_en.html" class="quarto-grid-link">Created for Day 8 (Urban) of the </a><a href="https://30daymapchallenge.com/">#30daymapchallenge</a>, this map shows the drastic change in land use for the wetland area in Tigre, Buenos…</p>
 </div>
 <div class="card-attribution card-text-small end">
 <div class="listing-date">
@@ -569,15 +623,21 @@ Nov 8, 2025
 </div>
 </div>
 </div>
+<div class="card-footer">
+<div class="card-filename listing-filename">P05_en.qmd</div>
 </div>
 </div>
-<div class="g-col-1" data-index="8" data-categories="MzAlMjBkYXklMjBtYXAlMjBjaGFsbGVuZ2U=" data-listing-date-sort="1762225200000" data-listing-file-modified-sort="1768420271268" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="142">
+</div>
+<div class="g-col-1" data-index="8" data-categories="MzAlMjBkYXklMjBtYXAlMjBjaGFsbGVuZ2U=" data-listing-date-sort="1762225200000" data-listing-file-modified-sort="1768582628441" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="142">
 <a href="./projects_en/P04_en.html" class="quarto-grid-link">
 </a><div class="quarto-grid-item card h-100 card-left"><a href="./projects_en/P04_en.html" class="quarto-grid-link">
 <p class="card-img-top">
 <img loading="lazy" src="./images/P04_cover.png" class="thumbnail-image card-img" style="height: 200px;">
 </p>
 </a><div class="card-body post-contents"><a href="./projects_en/P04_en.html" class="quarto-grid-link">
+<h5 class="no-anchor card-title listing-title">
+My bike tour around Buenos Aires City
+</h5>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('MzAlMjBkYXklMjBtYXAlMjBjaGFsbGVuZ2U='); return false;">30 day map challenge</div>
@@ -592,6 +652,9 @@ Nov 4, 2025
 </div>
 </div>
 </div>
+<div class="card-footer">
+<div class="card-filename listing-filename">P04_en.qmd</div>
+</div>
 </div>
 </div>
 <div class="g-col-1" data-index="9" data-categories="MzAlMjBkYXklMjBtYXAlMjBjaGFsbGVuZ2U=" data-listing-date-sort="1762052400000" data-listing-file-modified-sort="1768420271351" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="113">
@@ -601,6 +664,9 @@ Nov 4, 2025
 <img loading="lazy" src="./images/P03_cover.png" class="thumbnail-image card-img" style="height: 200px;">
 </p>
 </a><div class="card-body post-contents"><a href="./projects_en/P03_en.html" class="quarto-grid-link">
+<h5 class="no-anchor card-title listing-title">
+Contour lines for Pampa Linda, Río Negro, Argentina
+</h5>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('MzAlMjBkYXklMjBtYXAlMjBjaGFsbGVuZ2U='); return false;">30 day map challenge</div>
@@ -615,18 +681,26 @@ Nov 2, 2025
 </div>
 </div>
 </div>
+<div class="card-footer">
+<div class="card-filename listing-filename">P03_en.qmd</div>
 </div>
 </div>
-<div class="g-col-1" data-index="10" data-categories="MzAlMjBkYXklMjBtYXAlMjBjaGFsbGVuZ2U=" data-listing-date-sort="1761966000000" data-listing-file-modified-sort="1768420271435" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="124">
+</div>
+<div class="g-col-1" data-index="10" data-categories="MzAlMjBkYXklMjBtYXAlMjBjaGFsbGVuZ2UlMkNVcmJhbiUyMHBsYW5uaW5n" data-listing-date-sort="1761966000000" data-listing-file-modified-sort="1768582798579" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="124">
 <a href="./projects_en/P02_en.html" class="quarto-grid-link">
 </a><div class="quarto-grid-item card h-100 card-left"><a href="./projects_en/P02_en.html" class="quarto-grid-link">
 <p class="card-img-top">
 <img loading="lazy" src="./images/P02_cover.png" class="thumbnail-image card-img" style="height: 200px;">
 </p>
 </a><div class="card-body post-contents"><a href="./projects_en/P02_en.html" class="quarto-grid-link">
+<h5 class="no-anchor card-title listing-title">
+London plane trees in Buenos Aires City
+</h5>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('MzAlMjBkYXklMjBtYXAlMjBjaGFsbGVuZ2U='); return false;">30 day map challenge</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('VXJiYW4lMjBwbGFubmluZw=='); return false;">Urban planning</div>
 
 </div>
 </a><div class="card-text listing-description delink"><a href="./projects_en/P02_en.html" class="quarto-grid-link">
@@ -638,6 +712,9 @@ Nov 1, 2025
 </div>
 </div>
 </div>
+<div class="card-footer">
+<div class="card-filename listing-filename">P02_en.qmd</div>
+</div>
 </div>
 </div>
 <div class="g-col-1" data-index="11" data-categories="U3RhdGUlMjBvZiUyMHRoZSUyME1hcCUyMExhdGFt" data-listing-date-sort="1573786800000" data-listing-file-modified-sort="1768439703107" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="714">
@@ -647,6 +724,9 @@ Nov 1, 2025
 <img loading="lazy" src="./images/P01_cover.png" class="thumbnail-image card-img" style="height: 200px;">
 </p>
 <div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Quality of Life Index
+</h5>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('U3RhdGUlMjBvZiUyMHRoZSUyME1hcCUyMExhdGFt'); return false;">State of the Map Latam</div>
@@ -660,6 +740,9 @@ Nov 1, 2025
 Nov 15, 2019
 </div>
 </div>
+</div>
+<div class="card-footer">
+<div class="card-filename listing-filename">P01_en.qmd</div>
 </div>
 </div></a>
 </div>

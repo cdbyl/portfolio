@@ -77,5 +77,23 @@
   },
   "shapefiles/rutas_propuesta.qmd": {
     "rutas_propuesta.html": "d3877f8a"
+  },
+  "vectors/ecobici_estaciones.qmd": {
+    "ecobici_estaciones.html": "5201a1c8"
+  },
+  "vectors/ciclovias.qmd": {
+    "ciclovias.html": "9768a0d2"
+  },
+  "vectors/rutas_actual.qmd": {
+    "rutas_actual.html": "8398b900"
+  },
+  "vectors/puntos_ruteo.qmd": {
+    "puntos_ruteo.html": "bc76d470"
+  },
+  "vectors/rutas_propuesta.qmd": {
+    "rutas_propuesta.html": "ba006997"
+  },
+  "vectors/merged_single.qmd": {
+    "merged_single.html": "198ace53"
   }
 }

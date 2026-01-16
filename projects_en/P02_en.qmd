@@ -3,7 +3,7 @@ title: "London plane trees in Buenos Aires City"
 description: "Created for Day 1 (Points) of the [#30daymapchallenge](https://30daymapchallenge.com/), this project visualizes the density of London plane trees in Buenos Aires City — trees (in)famous for their allergenic impact in spring."
 date: "2025-11-01"
 lang: en
-categories: [30 day map challenge]
+categories: [30 day map challenge, Urban planning]
 image: ../images/P02_cover.png
 format:
   html:

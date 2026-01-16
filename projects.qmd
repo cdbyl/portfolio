@@ -6,17 +6,17 @@ toc: false #removes table of contents
 title-block-banner: false 
 format:
   html:
-    css: styles.css  # <--- Links it ONLY for this page
+    css: styles.css  
 listing:
-  contents: projects_en        # Folder where .qmd files live
-  type: grid                # <--- The Magic Switch
+  contents: projects_en        
+  type: grid               
   page-size: 20
   sort: "date desc"
-  categories: numbered          # Adds the filter buttons on the right
-  sort-ui: false            # Hides "Sort By" (Cleaner look)
-  filter-ui: false          # Hides "Search Bar" (Cleaner look)
-  fields: [image, date, description, categories]
-  image-height: "200px"     # Keeps all card images uniform
+  categories: numbered          # adds the filter buttons on the right
+  sort-ui: false            # hides sory by
+  filter-ui: false          # hides search bar
+  fields: [filename, title, image, date, description, categories]  #delete filename before publishing
+  image-height: "200px"     
   grid-item-align: left
 
 ---

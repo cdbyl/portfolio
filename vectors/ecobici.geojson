@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
-"name": "ecobici_estaciones",
+"name": "simple_ecobici — fixed_4326_ecobici",
 "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
 "features": [
 { "type": "Feature", "properties": { "id": 1, "fna": "Estación ecobici 001 - Facultad de Derecho", "gna": "Estación ecobici", "nam": "001 - Facultad de Derecho", "anc": 30, "dir": "Figueroa Alcorta, Pres. Av. 2120", "bar": "Recoleta", "com": "Comuna 2", "sag": "Ministerio de Infraestructura" }, "geometry": { "type": "Point", "coordinates": [ -58.39060318, -34.58375474 ] } },

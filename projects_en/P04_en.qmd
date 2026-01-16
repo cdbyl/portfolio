@@ -1,5 +1,5 @@
 ---
-title: "My tour around Buenos Aires City"
+title: "My bike tour around Buenos Aires City"
 description: "Created for Day 4 (My Data) of the [#30daymapchallenge](https://30daymapchallenge.com/), this map shows the route I tracked with my GPS on the *Vuelta en Bici*"
 date: "2025-11-04"
 lang: en

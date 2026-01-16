@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
-"name": "ciclovias",
+"name": "fixed_4326_ciclovias",
 "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
 "features": [
 { "type": "Feature", "properties": { "id": 11064, "gna": "Ciclovía", "trm": "Estivao", "ade": 101.0, "aha": 136.0, "tvc": "Calle", "sag": "Comunicación -  Secretaría de Transporte", "direction": 2 }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -58.431586680000045, -34.607462100000269 ], [ -58.432356430000048, -34.607782380000259 ] ] ] } },
