@@ -15,12 +15,12 @@ listing:
   categories: numbered          # adds the filter buttons on the right
   sort-ui: false            # hides sory by
   filter-ui: false          # hides search bar
-  fields: [filename, title, image, date, description, categories]  #delete filename before publishing
+  fields: [title, image, date, description, categories] 
   image-height: "200px"     
   grid-item-align: left
 
 ---
 ::: {.content-visible when-profile="english"}
 ## Featured Work
-Select a category from the right to filter the projects.
+Select a category from the right to filter the projects. Click on "All" to remove the filters.
 :::

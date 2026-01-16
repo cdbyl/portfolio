@@ -12,9 +12,22 @@ format:
 ****
 ## Project Overview
 
-:::{.text-justify}
-lorem ipsum
-:::
+The maps below show the current state of cycling infrastructure in Buenos Aires city, overlaying a routing analysis I did to highlight critical gaps in the network.
+
+### Infratructure
+The solid green and purple lines show the existing bike lane network, and the pink dots are the EcoBici stations to rent the City's bikes. 
+
+> A notable north-south disparity can be seen in the abundance of stations and the large areas uncovered by the network. 
+
+The isolated lanes were connected with the suggested red lines to allow for a better connectivity. 
+
+### Routing analysis
+
+To demonstrate the impact of these gaps, a cyclist's journey was simulated using [QGIS' tool "Shortest path"](https://docs.qgis.org/3.40/en/docs/training_manual/vector_analysis/network_analysis.html) starting from Parque de la Memoria (large orange dot) in the north to various destinations in the south and east (yellow dots).
+
+The current routing (dashed black lines) show that a cyclist can't get to the south without exiting the network; meanwhile the routing using the suggested red bike lane shows a new route (orange dashed lines).
+
+> While the network is extensive, it is not yet equitable. Closing the gaps in the south would not only improve safety but also strengthen intermodal links (like at Sáenz Station) and guarantee that active mobility is a viable option for all residents, regardless of where they live.
 
 ## Data Sources and Tools
 
@@ -36,7 +49,7 @@ library(leaflet)
 library(dplyr)
 
 sf_use_s2(FALSE)
-folder_path <- "../vectors"
+folder_path <- "../vectors" #all single features, in EPSG: 4326 and geometries checked
 
 load_layer <- function(filename) {
   full_path <- file.path(folder_path, filename)
@@ -53,12 +66,26 @@ puntos_ruteo <- load_layer("ptruteo.geojson")
 if (!is.null(ecobici)) ecobici <- st_cast(ecobici, "POINT")
 if (!is.null(puntos_ruteo)) puntos_ruteo <- st_cast(puntos_ruteo, "POINT")
 
-my_colors <- c(
+pal <- list(
   "Bike lane"            = "#1b9e77",
   "One-way bike lane"    = "#7570b3",
   "Suggested bike lanes" = "red",
   "Suggested routing"    = "#d95f02", 
-  "Current routing"      = "black"
+  "Current routing"      = "black",
+  "Start Point"          = "darkorange", 
+  "End Point"            = "#faff39",    
+  "EcoBici"              = "#fd7da3"     
+)
+
+toggle_mapping <- list(
+  "Starting routing point" = "Routing Layers",
+  "Routing end points"     = "Routing Layers",
+  "Current routing"        = "Routing Layers",
+  "Suggested routing"      = "Routing Layers",
+  "EcoBici Stations"       = "Infrastructure",
+  "Bike lane"              = "Infrastructure",
+  "One-way bike lane"      = "Infrastructure",
+  "Suggested bike lanes"   = "Infrastructure"
 )
 
 if (!is.null(merged_lines)) {
@@ -86,73 +113,90 @@ desired_order <- c(
 )
 
 map <- leaflet() %>%
-  setView(lng = -58.44, lat = -34.61, zoom = 12) %>%
+  setView(lng = -58.46, lat = -34.60, zoom = 12) %>%
   addTiles(
-    urlTemplate = "[https://wms.ign.gob.ar/geoserver/gwc/service/tms/1.0.0/capabaseargenmap@EPSG%3A3857@png/](https://wms.ign.gob.ar/geoserver/gwc/service/tms/1.0.0/capabaseargenmap@EPSG%3A3857@png/){z}/{x}/{-y}.png",
+    urlTemplate = "https://wms.ign.gob.ar/geoserver/gwc/service/tms/1.0.0/capabaseargenmap@EPSG%3A3857@png/{z}/{x}/{-y}.png",
     attribution = "Argenmap - IGN Argentina",
-    options = tileOptions(tms = TRUE), group = "Argenmap"
+    options = tileOptions(tms = FALSE), 
+    group = "Argenmap"
   ) %>%
   addProviderTiles(providers$CartoDB.DarkMatter, group = "Carto Dark Matter")
 
 for (group_name in rev(desired_order)) {
+  my_toggle_group <- toggle_mapping[[group_name]]
   
   if (group_name %in% names(lines_split)) {
-    
     layer_data <- lines_split[[group_name]]
-    
-    col <- ifelse(group_name %in% names(my_colors), my_colors[group_name], "#555555")
-    
+    col <- ifelse(group_name %in% names(pal), pal[group_name], "#555555")
     my_dash <- if(group_name %in% c("Current routing", "Suggested routing")) "5, 7" else NULL
     
     map <- map %>%
       addPolylines(
-        data = layer_data,
-        color = col,
-        weight = 2, opacity = 1,
-        dashArray = my_dash,  
-        group = group_name, 
+        data = layer_data, color = col, weight = 2, opacity = 1,
+        dashArray = my_dash, group = my_toggle_group,
         popup = ~gna
       )
-  
 
   } else if (group_name == "Starting routing point" && !is.null(parque_points)) {
     map <- map %>% addCircleMarkers(
       data = parque_points, radius = 6, fillColor = "darkorange", fillOpacity = 1,
       stroke = TRUE, color = "tomato", weight = 2,
-      group = group_name
+      group = my_toggle_group, popup = ~nam
     )
     
   } else if (group_name == "Routing end points" && !is.null(other_stops)) {
     map <- map %>% addCircleMarkers(
       data = other_stops, radius = 4, fillColor = "#faff39", fillOpacity = 0.8,
       stroke = TRUE, color = "#e6bc26", weight = 1.5,
-      group = group_name
+      group = my_toggle_group, popup = ~nam
     )
     
   } else if (group_name == "EcoBici Stations" && !is.null(ecobici)) {
     map <- map %>% addCircleMarkers(
-      data = ecobici, radius = 2, fillColor = "#fd7da3", fillOpacity = 0.8,
-      stroke = TRUE, color = "#cb6598", weight = 0.3,
-      group = group_name
+      data = ecobici, radius = 2, fillColor = "#ba0e64", fillOpacity = 0.7,
+      stroke = TRUE, color = "lightpink", weight = 0.7,
+      group = my_toggle_group, popup = ~nam
     )
   }
 }
 
-existing_lines <- names(lines_split)
-existing_points <- c("Starting routing point", "Routing end points", "EcoBici Stations")
-all_found <- c(existing_lines, existing_points)
+map <- map %>%
+  addLegend(
+    position = "bottomleft",
+    colors = c(
+      pal[["Current routing"]], 
+      pal[["Suggested routing"]],
+      pal[["Bike lane"]], 
+      pal[["One-way bike lane"]],
+      pal[["Suggested bike lanes"]],
+      pal[["Start Point"]],
+      pal[["End Point"]],
+      pal[["EcoBici"]]
+    ),
+    labels = c(
+      "Current Routing (Dashed)", 
+      "Suggested Routing (Dashed)",
+      "Bike Lane", 
+      "One-way Lane", 
+      "Suggested Lane",
+      "Start Point",
+      "End Points",
+      "EcoBici Station"
+    ),
+    opacity = 1,
+    title = "References"
+  )
 
-final_groups <- intersect(desired_order, all_found)
 
 map %>%
   addLayersControl(
     baseGroups = c("Argenmap", "Carto Dark Matter"),
-    overlayGroups = final_groups, 
+    overlayGroups = c("Routing Layers", "Infrastructure"), 
     options = layersControlOptions(collapsed = FALSE)
   )
 ```
 
-## The final map for Day 26
+## The final maps for Day 26
 
 ::: {.text-center}
 ![](../images/P11_map1.png){width=100% class="lightbox"}
