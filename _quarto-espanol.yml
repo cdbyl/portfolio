@@ -3,7 +3,7 @@ project:
   output-dir: docs/es
 
 website:
-  site-url: https://cdbyl.github.io/portfolio
+  site-url: https://cdbyl.github.io/portfolio/es
   description: "Portfolio de Carolina Byl"
   favicon: loguito.png
   open-graph:
