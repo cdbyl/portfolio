@@ -1,6 +1,6 @@
 project:
   title: "GIS Portfolio"
-  output-dir: _site/en
+  output-dir: docs/en
 
 website:
   site-url: https://cdbyl.github.io/portfolio

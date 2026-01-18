@@ -1,6 +1,6 @@
 project:
   title: "Portfolio SIG"
-  output-dir: _site/es
+  output-dir: docs/es
 
 website:
   site-url: https://cdbyl.github.io/portfolio
