@@ -70,5 +70,3 @@ Diploma in Applied Geomatics @ [Instituto de Altos Estudios Espaciales Mario Gul
 [comment]: <> ([likert](https://github.com/jbryer/likert) - Analysis and Visualization of Likert Based Items)
 :::
 :::
-
-<meta http-equiv="refresh" content="0; url=./en/">

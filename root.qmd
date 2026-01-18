@@ -1,0 +1,10 @@
+---
+pagetitle: "Redirecting..."
+format: 
+  html:
+    minimal: true
+---
+
+<meta http-equiv="refresh" content="0; url=./en/">
+<script>window.location = "./en/";</script>
+<p>Redirecting to <a href="./en/">English version</a>...</p>

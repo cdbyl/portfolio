@@ -1,0 +1,83 @@
+/* css styles */
+
+/* 1. Push the Title down */
+.quarto-listing-category-title {
+    margin-top: 45px !important; /* Adjust this number to align with "Featured Work" */
+}
+
+/* 2. Reset the List spacing */
+div.quarto-listing-category {
+    margin-top: 10px !important; /* Small gap between Title and List */
+}
+
+/* Target ONLY the last link (the location) */
+.about-links .about-link:last-of-type {
+  /* Force it to own the whole row */
+  flex-basis: 100% !important;
+  width: 100% !important;       /* Added: Ensures it takes full width on all devices */
+  display: block !important;    /* Added: Forces it to behave like a block text line */
+  
+  /* Spacing */
+  margin-top: 15px;
+  margin-left: 0 !important;    /* Added: Resets any auto-margins pushing it right */
+  
+  /* Text & Look */
+  text-align: center;           /* Added: Centers the text inside the 100% width */
+  border: none !important;
+  box-shadow: none !important;
+  background-color: transparent !important;
+  color: inherit;
+  text-transform: none;
+  pointer-events: none;
+}
+
+/* Target the left sidebar in Trestles */
+.quarto-about-trestles .about-entity {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centers content vertically */
+  min-height: 60vh;        /* Ensures there is enough height to center within */
+}
+
+/* --- CUSTOM MERMAID STYLES --- */
+
+/* 1. GREEN LINES & ARROWS */
+/* Changes the line connecting the boxes */
+.mermaid .edgePath .path {
+    stroke: #40A355 !important;
+    stroke-width: 2px !important;
+    opacity: 1 !important;
+}
+/* Changes the triangle arrowheads */
+.mermaid marker path {
+    fill: #40A355 !important;
+    stroke: #40A355 !important;
+}
+
+/* 2. GREEN BOX BORDERS */
+/* Changes the border of the rectangles */
+.mermaid .node rect,
+.mermaid .node circle,
+.mermaid .node polygon {
+    stroke: #40A355 !important;
+    stroke-width: 2px !important;
+    /* We leave 'fill' alone so it stays Dark in Dark Mode / Light in Light Mode */
+}
+
+/* 3. PURPLE TEXT ON ARROWS */
+/* Changes the text "Crop", "Operations", etc. */
+.mermaid .edgeLabel, 
+.mermaid .edgeLabel span,
+.mermaid .edgeLabel div {
+    color: #9E54BD !important;
+    /* Uses the site background color for the label background */
+    /* This ensures it looks clean on both Dark and Light mode */
+    background-color: var(--bs-body-bg) !important; 
+}
+
+/* Removes background color from code blocks */
+div.sourceCode, pre.sourceCode, code.sourceCode {
+  background-color: transparent !important;
+}
+
+
