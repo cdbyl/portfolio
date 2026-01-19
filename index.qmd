@@ -35,7 +35,7 @@ Proven background in enterprise geodatabases, remote sensing analysis using Goog
 
 Programming experience in Python, SQL, and JavaScript, applied to support multidisciplinary teams in national and international contexts, including technical instruction and mentoring.
 
-You're welcome to check out some of my work in the "Projects" tab of this site.
+You're welcome to check out some of my work in this site.
 
 ## Education
 
