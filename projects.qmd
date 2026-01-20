@@ -1,5 +1,5 @@
 ---
-title: ""
+title: "GIS Portfolio"
 pagetitle: "GIS Portfolio"
 page-layout: full
 toc: false #removes table of contents

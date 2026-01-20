@@ -19,6 +19,9 @@ about: # More info about this page type: https://quarto.org/docs/websites/websit
     - text: CV (english)
       icon: file-pdf
       url: "https://github.com/cdbyl/portfolio/blob/main/CV_en.pdf?raw=true"
+    - text: CV (spanish)
+      icon: file-pdf
+      url: "https://github.com/cdbyl/portfolio/blob/main/CV_es.pdf?raw=true"
     - text: Buenos Aires, AR
       icon: pin-map-fill
       href: "#"
@@ -36,6 +39,11 @@ Proven background in enterprise geodatabases, remote sensing analysis using Goog
 Programming experience in Python, SQL, and JavaScript, applied to support multidisciplinary teams in national and international contexts, including technical instruction and mentoring.
 
 You're welcome to check out some of my work in this site.
+
+## Experience as GIS Analyst
+
+* ERM Argentina  (2023 - 2025)
+* National Geographic Institute of Argentina (IGN) (2022 - 2023)
 
 ## Education
 
