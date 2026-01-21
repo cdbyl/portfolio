@@ -80,4 +80,13 @@ div.sourceCode, pre.sourceCode, code.sourceCode {
   background-color: transparent !important;
 }
 
+/* Add breathing room on mobile only */
+@media (max-width: 768px) {
+  body {
+    padding-left: 1.5rem; /* Adjust this number if you need more space */
+    padding-right: 1rem;  /* Keeps the right side balanced too */
+  }
+}
+
+
 
