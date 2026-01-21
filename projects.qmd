@@ -1,6 +1,6 @@
 ---
-title: "GIS Portfolio"
-pagetitle: "GIS Portfolio"
+title: "Portfolio"
+pagetitle: "Portfolio"
 page-layout: full
 toc: false #removes table of contents
 title-block-banner: false 
