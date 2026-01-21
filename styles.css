@@ -88,5 +88,7 @@ div.sourceCode, pre.sourceCode, code.sourceCode {
   }
 }
 
-
-
+/* Hide the sidebar Categories title */
+.quarto-listing-category-title {
+    display: none !important;
+}
