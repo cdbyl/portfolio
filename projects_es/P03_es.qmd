@@ -1,0 +1,41 @@
+---
+title: "Contour lines for Pampa Linda, Río Negro, Argentina"
+description: "Created for Day 2 (Lines) of the [#30daymapchallenge](https://30daymapchallenge.com/), this project visualizes the relief with all of it's ups-and-downs in Pampa Linda, Argentina."
+date: "2025-11-02"
+lang: en
+categories: [30 day map challenge]
+image: ../images/P03_cover.png
+format:
+  html:
+    code-fold: true 
+---
+****
+## Project Overview
+
+:::: {.columns}
+
+::: {.column width="35%" .text-justify}
+*Pampa Linda* is the main valley and nearest settlement at the base of Cerro Tronador. The mountain was named *Tronador* — Spanish for "Thunderer" — because of the sound of falling ice heard as one approaches the peak. 
+It is the highest and most prominent mountain in Nahuel Huapi National Park, standing at 3,554 meters above sea level.
+:::
+
+::: {.column width="65%" .text-center}
+![_Tronador Mt. at Río Negro, Argentina_](../images/P03_tronador.jpg){width=70%}
+:::
+
+::::
+## Data Sources and Tools
+
+* DEM SRTM with ~90m pixel resolution, obtained with [OpenTopography DEM Downloader Plugin](https://plugins.qgis.org/plugins/OpenTopography-DEM-Downloader/)
+* Peaks, international boundary, settlements, water courses and bodies: [National Geography Institute of Argentina](https://geoportal.ign.gob.ar/)
+
+****
+* Made with ![](../images/QGIS.png){width=1em style="vertical-align: middle;"}[GIS](https://qgis.org/project/overview/) 3.22.4-Białowieża
+
+## The final map for Day 2
+
+::: {.text-center}
+
+![](../images/P03_map.png){width=100% class="lightbox"}
+:::
+

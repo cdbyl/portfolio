@@ -1,5 +1,23 @@
 [
   {
+    "listing": "/projects-es.html",
+    "items": [
+      "/projects_es/P12_es.html",
+      "/projects_es/P11_es.html",
+      "/projects_es/P10_es.html",
+      "/projects_es/P09_es.html",
+      "/projects_es/P08_es.html",
+      "/projects_es/P07_es.html",
+      "/projects_es/P06_es.html",
+      "/projects_es/P05_es.html",
+      "/projects_es/P04_es.html",
+      "/projects_es/P03_es.html",
+      "/projects_es/P02_es.html",
+      "/projects_es/P13_es.html",
+      "/projects_es/P01_es.html"
+    ]
+  },
+  {
     "listing": "/projects.html",
     "items": [
       "/projects_en/P12_en.html",
@@ -16,9 +34,5 @@
       "/projects_en/P13_en.html",
       "/projects_en/P01_en.html"
     ]
-  },
-  {
-    "listing": "/projects-es.html",
-    "items": []
   }
 ]

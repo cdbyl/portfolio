@@ -1,6 +1,6 @@
 ---
 title: ""
-pagetitle: "Proyectos"
+pagetitle: "Portfolio"
 page-layout: full
 toc: false #removes table of contents
 title-block-banner: false 
@@ -15,14 +15,43 @@ listing:
   categories: numbered          # Adds the filter buttons on the right
   sort-ui: false            # Hides "Sort By" (Cleaner look)
   filter-ui: false          # Hides "Search Bar" (Cleaner look)
-  fields: [image, date, description, categories]
+  fields: [title, image, date, description, categories]
   image-height: "200px"     # Keeps all card images uniform
   grid-item-align: left
 
 ---
 ::: {.content-visible when-profile="espanol"}
-## Proyectos Destacados
-Seleccione una categoría del panel a la derecha para filtrar los proyectos. 
+## Featured Work
+_Seleccione una categoría de la lista debajo para filtrar los proyectos._ 
 
-EN CONSTRUCCIÓN :)
+_Hacer click en "All" para quitar los filtros._
+
+****
 :::
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  // 1. Find the category box (currently hiding in the sidebar)
+  var categories = document.querySelector(".quarto-listing-category");
+  
+  // 2. Find the main list of projects
+  var projectList = document.querySelector("#listing-listing"); 
+
+  // 3. Move the categories!
+  if (categories && projectList) {
+    // Insert categories BEFORE the project list starts
+    projectList.parentNode.insertBefore(categories, projectList);
+    
+    // 4. Style them to look like a horizontal menu
+    categories.style.display = "flex";
+    categories.style.flexWrap = "wrap";
+    categories.style.gap = "10px"; /* Space between buttons */
+    categories.style.marginBottom = "1.5rem"; /* Space below the buttons */
+    categories.style.marginTop = "1rem"; 
+    
+    // Optional: Reset any sidebar-specific widths
+    categories.style.width = "100%";
+  }
+});
+</script>

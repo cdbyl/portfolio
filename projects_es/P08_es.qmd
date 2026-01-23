@@ -1,0 +1,152 @@
+---
+title: "Burn severity for Delta del Paraná, Argentina"
+description: "Created for Day 15 (Fire) of the [#30daymapchallenge](https://30daymapchallenge.com/), this project shows the dNBR over the Paraná Delta before and after the 2020 wildfires."
+date: "2025-11-15"
+lang: en
+categories: [30 day map challenge, Remote Sensing]
+image: ../images/P08_cover.png
+format:
+  html:
+    code-fold: true 
+---
+****
+## Project Overview
+
+:::{.text-justify}
+The wildfires in the Paraná Delta, Argentina - previously studied for Day 10 challenge - were brought up again to analyze from the point of view of its vegetation.
+
+Sentinel-2 imagery was used in Google Earth Engine to calculate [NDVI](https://en.wikipedia.org/wiki/Normalized_difference_vegetation_index) before and after the fire, highlighting the presence and condition of the vegetation immediately prior to and following the events. Using these NDVI values, [dNBR](https://www.un-spider.org/advisory-support/recommended-practices/recommended-practice-burn-severity/in-detail/normalized-burn-ratio) was also computed, an index commonly used to estimate burn severity.
+
+Negative NDVI values were masked and interpreted as water bodies or watercourses.
+:::
+
+## Data Sources and Tools
+
+* ESA's [Harmonized Sentinel-2 (MSI)](https://developers.google.com/earth-engine/datasets/catalog/COPERNICUS_S2_SR_HARMONIZED) with Google Earth Engine
+* Province boundaries: [National Geography Institute of Argentina](https://geoportal.ign.gob.ar/)
+* Basemap: [Argenmap by National Geography Institute of Argentina](https://www.ign.gob.ar/AreaServicios/Argenmap/Introduccion)
+
+****
+* Made with ![](../images/QGIS.png){width=1em style="vertical-align: middle;"}[GIS](https://qgis.org/project/overview/) 3.22.4-Białowieża
+
+## Google Earth Engine code
+
+<details>
+<summary>Click to view</summary>
+
+```javascript {filename="GEE Script Day 15-Fire"}
+// 1. Load ROI
+Map.addLayer(roi.style({color: 'purple', fillColor: '00000000', width: 2}), {}, 'ROI');
+
+// 2. Define dates for before and after the fires
+var date1 = ee.DateRange('2019-12-01', '2019-12-31');
+var date2 = ee.DateRange('2020-09-01', '2020-09-30');
+
+// 3. Load Sentinel-2 imagery, filter by cloud % and roi bounds
+var s2_pre = ee.ImageCollection('COPERNICUS/S2_SR_HARMONIZED')
+  .filterDate(date1)
+  .filterBounds(roi)
+  .filterMetadata('CLOUDY_PIXEL_PERCENTAGE', 'less_than', 30) // 30% clouds max
+  .median()
+  .clip(roi);
+
+var s2_post = ee.ImageCollection('COPERNICUS/S2_SR_HARMONIZED')
+  .filterDate(date2)
+  .filterBounds(roi)
+  .filterMetadata('CLOUDY_PIXEL_PERCENTAGE', 'less_than', 30)
+  .median()
+  .clip(roi);
+
+// 4. Calculate NDVI
+var ndvi_pre = s2_pre.normalizedDifference(['B8', 'B4']).rename('NDVI_pre');
+var ndvi_post = s2_post.normalizedDifference(['B8', 'B4']).rename('NDVI_post');
+
+// 5. Calculate NBR and dNBR
+var nbr_pre = s2_pre.normalizedDifference(['B8', 'B12']).rename('NBR_pre');
+var nbr_post = s2_post.normalizedDifference(['B8', 'B12']).rename('NBR_post');
+var dnbr = nbr_pre.subtract(nbr_post).rename('dNBR');
+
+// 6. Establish visualization parameters
+var ndviParams = {min: 0, max: 1, palette: ['brown','yellow','green']};
+var dnbrParams = {min: -0.5, max: 0.5, palette: ['blue','white','red']};
+
+// 7. Plot map
+Map.centerObject(roi);
+Map.addLayer(ndvi_pre, ndviParams, 'NDVI pre-incendios');
+Map.addLayer(ndvi_post, ndviParams, 'NDVI post-incendios');
+Map.addLayer(dnbr, dnbrParams, 'dNBR pre-post');
+
+// 7.1 Legend function
+function addLegend(title, palette, min, max, labels) {
+  var legend = ui.Panel({
+    style: {
+      position: 'bottom-left',
+      padding: '8px 15px'
+    }
+  });
+
+  var legendTitle = ui.Label({
+    value: title,
+    style: {
+      fontWeight: 'bold',
+      fontSize: '14px',
+      margin: '0 0 4px 0',
+      color: 'black'
+    }
+  });
+
+  legend.add(legendTitle);
+
+  var lon = ee.Image.pixelLonLat().select('longitude');
+  var gradient = lon.multiply((max - min) / 100.0).add(min);
+  var legendImage = gradient.visualize({min: min, max: max, palette: palette});
+
+  var thumbnail = ui.Thumbnail({
+    image: legendImage,
+    params: {bbox: [0, 0, 100, 10], dimensions: '200x20'},
+    style: {margin: '4px 0'}
+  });
+
+  legend.add(thumbnail);
+
+  var labelPanel = ui.Panel({
+    widgets: [
+      ui.Label(labels[0], {margin: '0 8px'}),
+      ui.Label(labels[1], {margin: '0 8px', textAlign: 'right', stretch: 'horizontal'})
+    ],
+    layout: ui.Panel.Layout.flow('horizontal')
+  });
+
+  legend.add(labelPanel);
+
+  Map.add(legend);
+}
+
+// 7.2 Add legends to map
+
+// NDVI legend
+addLegend(
+  'NDVI',
+  ['brown','yellow','green'],
+  0, 1,
+  ['Low vegetation', 'High vegetation']
+);
+
+// dNBR legend
+addLegend(
+  'dNBR',
+  ['blue','white','red'],
+  -0.5, 0.5,
+  ['Negative (regrowth)', 'Positive (burned)']
+);
+```
+</details>
+
+## The final map for Day 15
+
+::: {.text-center}
+![](../images/P08_map1.png){width=100% class="lightbox"}
+
+![](../images/P08_map2.png){width=100% class="lightbox"}
+:::
+

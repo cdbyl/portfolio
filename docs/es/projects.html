@@ -338,18 +338,8 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
-<span class="menu-text">Inicio</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link" href="./projects-es.html"> 
-<span class="menu-text">Proyectos</span></a>
-  </li>  
-</ul>
-            <ul class="navbar-nav navbar-nav-scroll ms-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="./../en/"> 
-<span class="menu-text">English</span></a>
+<span class="menu-text">Portfolio</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -366,28 +356,37 @@ window.Quarto = {
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
     <h5 class="quarto-listing-category-title">Categorías</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">Todas <span class="quarto-category-count">(13)</span></div><div class="category" data-category="MzAlMjBkYXklMjBtYXAlMjBjaGFsbGVuZ2U=">30 day map challenge <span class="quarto-category-count">(11)</span></div><div class="category" data-category="Q29uc3VsdGluZw==">Consulting <span class="quarto-category-count">(1)</span></div><div class="category" data-category="SW50ZXJhY3RpdmUlMjBtYXA=">Interactive map <span class="quarto-category-count">(3)</span></div><div class="category" data-category="UmVtb3RlJTIwU2Vuc2luZw==">Remote Sensing <span class="quarto-category-count">(5)</span></div><div class="category" data-category="U3RhdGUlMjBvZiUyMHRoZSUyME1hcCUyMExhdGFt">State of the Map Latam <span class="quarto-category-count">(1)</span></div><div class="category" data-category="VXJiYW4lMjBwbGFubmluZw==">Urban planning <span class="quarto-category-count">(4)</span></div></div></div>
 <!-- main -->
-<main class="content column-page-left" id="quarto-document-content">
-
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Portfolio</h1>
-</div>
+<main class="content column-page-left" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
 
 
-<div class="quarto-title-meta column-page-left">
 
-    
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  // 1. Find the category box (currently hiding in the sidebar)
+  var categories = document.querySelector(".quarto-listing-category");
   
+  // 2. Find the main list of projects
+  var projectList = document.querySelector("#listing-listing"); 
+
+  // 3. Move the categories!
+  if (categories && projectList) {
+    // Insert categories BEFORE the project list starts
+    projectList.parentNode.insertBefore(categories, projectList);
     
-  </div>
-  
-
-
-</header>
-
-
+    // 4. Style them to look like a horizontal menu
+    categories.style.display = "flex";
+    categories.style.flexWrap = "wrap";
+    categories.style.gap = "10px"; /* Space between buttons */
+    categories.style.marginBottom = "1.5rem"; /* Space below the buttons */
+    categories.style.marginTop = "1rem"; 
+    
+    // Optional: Reset any sidebar-specific widths
+    categories.style.width = "100%";
+  }
+});
+</script>
 
 
 

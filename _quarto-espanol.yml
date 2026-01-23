@@ -13,19 +13,19 @@ website:
   navbar:
     pinned: true
     left:
-      - text: "Inicio"
-        href: index.html
-      - text: "Proyectos"
+      # - text: "Home"
+      #   href: index.html
+      - text: "Portfolio"
         href: projects-es.html
       #- text: "Blog"
       #  href: blog.html
       #- icon: rss
       #  href: blog.xml
-    right:
-      - text: "English"
-        href: ../en/
+#comentado pero hay que descomentar cuando habilite la versión en español
+    # right:
+    #   - text: "Español"
+    #     href: ../es/
   page-footer:
     left: "Sitio creado con Quarto"
 
 lang: es
-

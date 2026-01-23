@@ -19,7 +19,7 @@ about: # More info about this page type: https://quarto.org/docs/websites/websit
     - text: CV (english)
       icon: file-pdf
       url: "https://github.com/cdbyl/portfolio/blob/main/CV_en.pdf?raw=true"
-    - text: CV (spanish)
+    - text: CV (español)
       icon: file-pdf
       url: "https://github.com/cdbyl/portfolio/blob/main/CV_es.pdf?raw=true"
     - text: Buenos Aires, AR
@@ -32,6 +32,7 @@ toc: false
 ::: {.content-visible when-profile="english"}
 
 ## About me
+
 GIS Analyst and Environmental Engineer with 4+ years of experience delivering spatial analysis, cartographic products, and cloud-based geospatial solutions for environmental and infrastructure projects. 
 
 Proven background in enterprise geodatabases, remote sensing analysis using Google Earth Engine, and field data collection workflows. 
@@ -63,13 +64,25 @@ Diploma in Applied Geomatics @ [Instituto de Altos Estudios Espaciales Mario Gul
 ::: {.content-visible when-profile="espanol"}
 
 ## Sobre mí
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+Ingeniera Ambiental y Analista SIG con más de 4 años de experiencia en análisis espaciales, productos cartográficos y soluciones geoespaciales en la nube para proyectos ambientales y de infraestructura.
+
+Cuento con experiencia en manejo de geodatabases corporativas, teledetección utilizando Google Earth Engine y flujos de trabajo para la recolección de datos en campo.
+
+Experiencia en programación con Python, SQL, R, y JavaScript, aplicada para dar soporte a equipos multidisciplinarios en contextos nacionales e internacionales, incluyendo capacitación técnica y mentoría.
+
+Los invito a ver algunos de mis trabajos [en este sitio](../es/projects-es.html).
+
+## Experiencia como Analista SIG
+
+* ERM Argentina (2023 - 2025)
+* Instituto Geográfico Nacional (IGN) (2022 - 2023)
 
 ## Formación Académica
 
-BS & MS in Environmental Engineering @ [Universidad Nacional de San Martín (UNSAM)](https://unsam.edu.ar/escuelas/ecyt/171/ciencia/ingenieria-ambiental)
+Ingeniería Ambiental en [Universidad Nacional de San Martín (UNSAM)](https://unsam.edu.ar/escuelas/ecyt/171/ciencia/ingenieria-ambiental)
 
-Diploma in Applied Geomatics @ [Instituto de Altos Estudios Espaciales Mario Gulich (CONAE - UNC)](https://ig.conae.unc.edu.ar/diplomatura-universitaria-en-geomatica-aplicada/)
+Dimplomatura en Geomática Aplicada en [Instituto de Altos Estudios Espaciales Mario Gulich (CONAE - UNC)](https://ig.conae.unc.edu.ar/diplomatura-universitaria-en-geomatica-aplicada/)
 
 ------------------------------------------------------------------------
 

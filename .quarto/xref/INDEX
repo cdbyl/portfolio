@@ -102,5 +102,44 @@
   "root.qmd": {
     "root.html": "fd050954",
     "index.html": "cacbbb54"
+  },
+  "projects_es/P02_es.qmd": {
+    "P02_es.html": "12c38971"
+  },
+  "projects_es/P06_es.qmd": {
+    "P06_es.html": "6422157f"
+  },
+  "projects_es/P11_es.qmd": {
+    "P11_es.html": "46119423"
+  },
+  "projects_es/P03_es.qmd": {
+    "P03_es.html": "08aa6013"
+  },
+  "projects_es/P01_es.qmd": {
+    "P01_es.html": "ecdfe6a3"
+  },
+  "projects_es/P12_es.qmd": {
+    "P12_es.html": "5ec6a06d"
+  },
+  "projects_es/P07_es.qmd": {
+    "P07_es.html": "ab2ef55c"
+  },
+  "projects_es/P04_es.qmd": {
+    "P04_es.html": "4a89ada6"
+  },
+  "projects_es/P05_es.qmd": {
+    "P05_es.html": "9e3c682d"
+  },
+  "projects_es/P13_es.qmd": {
+    "P13_es.html": "b5343f08"
+  },
+  "projects_es/P10_es.qmd": {
+    "P10_es.html": "34a39fc3"
+  },
+  "projects_es/P08_es.qmd": {
+    "P08_es.html": "4ff17b75"
+  },
+  "projects_es/P09_es.qmd": {
+    "P09_es.html": "1ee4310e"
   }
 }

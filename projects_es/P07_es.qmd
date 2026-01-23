@@ -1,0 +1,46 @@
+---
+title: "Minimalist map of an Argentinian town"
+description: "Created for Day 11 (Minimal map) of the [#30daymapchallenge](https://30daymapchallenge.com/), this project shows the minimum elements to describe a city"
+date: "2025-11-11"
+lang: en
+categories: [30 day map challenge]
+image: ../images/P07_cover.jpeg
+format:
+  html:
+    code-fold: true 
+---
+****
+## Project Overview
+
+This map was produced using the most simple and minimalistic symbology I could: no labels, no names. You can try and figure out if you know the place just from the looks of it, click to show the hidden text at the end of this page.
+
+## Data Sources and Tools
+
+* Province and department boundaries, settlements, water bodies, railways and rail stations, roads: [National Geography Institute of Argentina](https://geoportal.ign.gob.ar/)
+
+****
+* Made with ![](../images/QGIS.png){width=1em style="vertical-align: middle;"}[GIS](https://qgis.org/project/overview/) 3.22.4-Białowieża
+
+## The final map for Day 11
+
+::: {.text-center}
+
+![](../images/P07_map.jpeg){width=100% class="lightbox"}
+:::
+
+<details>
+  <summary>First hint</summary>
+  
+  It's in Argentina
+</details>
+<details>
+  <summary>Second hint</summary>
+  
+  It's in Buenos Aires Province (not the Capital city)
+</details>
+<details>
+  <summary>Answer!</summary>
+  
+  It's [Chascomús](https://en.wikipedia.org/wiki/Chascom%C3%BAs)
+</details>
+

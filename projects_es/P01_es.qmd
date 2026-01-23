@@ -1,0 +1,90 @@
+---
+title: "Índice de Calidad de Vida"
+description: "Aplicación del Índice de Calidad de Vida (ICV) de ACUMAR a la Cuenca vecina del Río Reconquista, basada en las fuertes similitudes geográficas y socioeconómicas de la región con la cuenca Matanza-Riachuelo originalmente estudiada."
+date: "2019-11-15"
+lang: es
+categories: [State of the Map Latam]
+image: ../images/P01_cover.png  
+format:
+  html:
+    code-fold: true 
+---
+****
+## Resumen del proyecto
+Como trabajo final de la materia Sistemas de Información Geográfica en la carrera de Ingeniería Ambiental, L. Sandri y yo decidimos analizar una región frecuentemente estudiada en distintas asignaturas. Motivadas por la falta de datos espaciales detallados para la degradada Cuenca del Reconquista, nos enfocamos en generar nueva información para esta área específica.
+
+Al replicar la metodología de ACUMAR, este estudio busca generar resultados comparables y utilizar la visualización cartográfica para identificar áreas vulnerables. El objetivo final es proveer una herramienta estratégica para que las instituciones optimicen la asignación de recursos y diseñen políticas socioambientales focalizadas en donde más se necesitan.
+
+Aunque no se pudo calcular el índice completo debido a limitaciones en los datos (específicamente los componentes ambiental y educativo), logramos computar las métricas de **vivienda** y **salud**. Esto nos permitió realizar un análisis comparativo frente al índice de Matanza-Riachuelo.
+
+## Datos y herramientas
+Todos los datos fueron obtenidos de fuentes públicas y abiertas:
+
+* [INDEC](https://www.indec.gob.ar/): Las características de la vivienda y el acceso a infraestructura sanitaria se tomaron del Censo 2010.
+* [Datos Abiertos de la Provincia de Buenos Aires](https://catalogo.datos.gba.gob.ar/): Distribución de establecimientos de salud pública.
+* [Instituto Geográfico Nacional](https://www.ign.gob.ar): Límites políticos provinciales y departamentales, cursos de agua.
+* [Atlas de la Basura (FADU)](https://cim.fadu.uba.ar/productos/): Sitios de disposición legal e ilegal de residuos (no disponible al momento del acceso).
+
+* Todas las operaciones geoespaciales y producciones cartográficas se realizaron en ![](../images/QGIS.png){width=1em style="vertical-align: middle;"}[**GIS**](https://qgis.org/project/overview/) **3.14**. Las principales herramientas utilizadas incluyeron la librería nativa de QGIS para operaciones como cortar (clip), disolver (dissolve) y áreas de influencia (buffer), así como el uso de la calculadora para operar entre capas.
+
+## Metodología
+### Cáculos
+La metodología sigue la propuesta por ACUMAR [1] donde:
+
+::: {.text-center}
+ICV (Índice de Calidad de Vida) = 0.25 * IV + 0.25 * ISP + 0.25 IEd + 0.25 * IA 
+:::
+
+* IV: índice de vivienda
+* ISP: índice de salud pública
+* IEd: índice de educación
+* IA: índice ambiental
+
+Because of the information available at the time, we were able to calculate both HI and PHI sub-indeces. When comparing with ACUMAR's data from Matanza-Riachuelo basin, we only compared to those two, and using the same scale for visualization as the one proposed by ACUMAR. 
+
+### Proceso
+* The fundamental spatial unit used was the "radio censal" (census radius), which is the smallest unit of geography used by INDEC for census reporting. All datasets with a coarser resolution were transformed to match this base layer, ensuring the analysis utilized the highest resolution available. 
+* Although operations were performed for all census radii of all comprising departments of the Basin, for visualization purposes only those within the Basin were shown. This happens because a basin is defined by physical characteristics unlike political boundaries. 
+
+```{mermaid}
+---
+config:
+  theme: base
+  flowchart:
+    padding: 5
+---
+flowchart TD
+    C(Basin Boundary) -->|Clip| B(Mask) --> Y
+    A(Water courses) -->|Clip| Y
+    D(Census radii) --> |Selection of housing variables| E(Housing Index raw data) --> |Operations| F(Housing Index) --> Y
+    G(Public health establishments) --> |Buffer, dissolve| H(Health Index)
+    I(Static waste disposal map) --> |Digitalization from satellite images| J(Waste disposal locations) --> |Buffer and scoring by distance| H --> Y
+    K(Political boundaries) --> Y([Join]) --> |Visualization| Z(Final cartographic product)
+linkStyle default stroke:#40A355, stroke-width:2px;
+classDef default stroke:#40A355,stroke-width:2px;
+```
+
+## Key Findings & Analysis
+::: {.text-center}
+![_Quality of Life Index for Reconquista Basin compared with Matanza-Riachuelo Basin (only housing and health)_](../images/P01_cover.png){width=100% class="lightbox"}
+:::
+
+The methodology proposed by ACUMAR was successfully applied to the Reconquista River Basin to calculate Health and Housing indices, along with an adapted Quality of Life Index. The analysis focused exclusively on "urban" census radii, covering 27.91% of the basin's surface area but representing **96.21% of the total population** (2,942,680 inhabitants).
+
+The study revealed that the vast majority of the population lives in vulnerable conditions:
+* Very High: 0.16%
+* High: 12.50%
+* Medium: 10.43%
+* Low: 37.04%
+* Very Low: 39.83%
+
+### Dimensional Analysis
+The Health Index revealed widespread needs (driven by a lack of basic sanitary services), whereas the Housing Index showed generally better conditions with specific pockets requiring state intervention.
+
+### Spatial Findings
+* High QLI: Areas closest to CABA and high-density urban zones (often surrounding railway stations) showed the highest quality of life values.
+* Low QLI: Conversely, areas in close proximity to water bodies tended to have the lowest values.
+* Basin Distribution: No clear distinction was observed between the middle and lower basins in terms of QLI, though the middle basin presented more rural and mixed-use zones.
+
+## References
+[1] ACUMAR, (2017a). <u>Anexo III: Fichas metodológicas.</u> <i>Índice de Calidad de Vida (ICV).</i> Available at: [http://www.acumar.gob.ar/indicadores/indice-calidad-vida-icv/](http://www.acumar.gob.ar/indicadores/indice-calidad-vida-icv/), on 19/08/2019.
