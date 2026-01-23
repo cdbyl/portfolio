@@ -21,10 +21,10 @@ listing:
 
 ---
 ::: {.content-visible when-profile="espanol"}
-## Featured Work
+## Trabajo destacado
 _Seleccione una categoría de la lista debajo para filtrar los proyectos._ 
 
-_Hacer click en "All" para quitar los filtros._
+_Hacer click en "Todas" para quitar los filtros._
 
 ****
 :::
