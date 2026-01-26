@@ -10,9 +10,9 @@ about: # More info about this page type: https://quarto.org/docs/websites/websit
     - text: LinkedIn
       icon: linkedin
       url: "https://www.linkedin.com/in/carolina-byl/"
-    - text: GitHub
-      icon: github
-      url: "https://github.com/cdbyl"
+    # - text: GitHub
+    #   icon: github
+    #   url: "https://github.com/cdbyl"
     - text: Email
       icon: envelope
       url: "mailto:carolinabyl@gmail.com"
